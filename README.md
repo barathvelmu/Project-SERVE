@@ -1,15 +1,17 @@
-# Note:
-Once we 'custom-name' our project, we can change this Repo. name. If anyone has suggestions, shoot me some ideas :) 
+# Project
+Repository Template for our CS Final Project. 
 
-# CS338-Final-Project
-Repository Template for the CS 338 Final Project. Repository can be populated once we finalize the backend + frontend tools.
+# Commit Naming
+It would awesome if we could all write commit messages before pushing code changes/PRs, as it would help us know what the change is for!
 
-**Initial Tech Stack Idea**
+**Example:** "_Wrote logic for button on home page_" or "_Added small HTML header for subtitle_"
+
+**Tech Stack Idea**
 - **Frontend:** Streamlit
 - **Backend:** Flask
 - **Database:** SQlite (if it limits us after construction of the ER diagram, we can consider MySQL)
 
 **Reasoning:**
 - **Streamlit:** easy to get the frontend working. Has prebuilt components and widgets for common tasks like adding buttons, sliders, text inputs. Jaden has working experience with it, so we will have some familiarity
-- **Flash:** Jaden has working experience with Flask. I also have little Python web-dev experience so I can try to learn some Flask to code.
+- **Flask:** Jaden has working experience with Flask. I also have little Python web-dev experience so I can try to learn some Flask to code.
 - **SQlite:** It is easy, very little configuration, recommended by the Project Document (CS 338), and is sheareable! 
