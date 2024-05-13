@@ -16,12 +16,3 @@ Repository Template for our CS Final Project.
 It would awesome if we could all write commit messages before pushing code changes/PRs, as it would help us know what the change is for!
 
 **Example:** "_Wrote logic for button on home page_" or "_Added small HTML header for subtitle_"
-
-## Note on Pull Requests
-A Pull Request ensures someone doesn't directly push into our main code, which is all stored in the "main" branch. It is a method to propose changes to the codebase and have it reviewed (errors etc.) before being pushed. 
-
-I enabled every PR to have **at least 1 required approval** so someone can take a look. For project simplicity, I was thinking of **only using the "main"** branch. 
-
-My reasoning to having branch protection is to avoid someone accidentally deleting code or pushing code with errors etc, but nothing more than that. 
-
-_If anyone dislikes the general PR approach and wants to directly push without any review, we can all re-decide as a team!_
