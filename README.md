@@ -1,5 +1,5 @@
-# Project-SERVE (CS 338)
-Repository Template for our CS Final Project. 
+# Project-SERVE (CS 338, 2024)
+Repository for our CS Final Project. 
 
 ## Tech Stack
 **Tech Stack Idea**
