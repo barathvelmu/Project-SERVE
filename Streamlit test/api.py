@@ -13,11 +13,29 @@ def home():
     
     Leave."""
 
-@app.route('/test', methods = ['GET', 'POST'])
+@app.route('/StudentBreakdown', methods = ['GET', 'POST'])
 def test():
     con = sqlite3.connect("SERVE.db")
+
+    # Students by Faculty
     res = con.execute("SELECT Faculty, count(*) from S24_Members group by Faculty")
-    results = {}
+    results_faculty = {}
     for row in res:
-        results[row[0]] = [row[1]]
-    return results
+        results_faculty[row[0]] = [row[1]]
+
+    # Students by Gender
+    res = con.execute("SELECT Gender, count(*) from S24_Members group by Gender")
+    results_gender= {}
+    for row in res:
+        results_gender[row[0]] = [row[1]]
+
+    # Students by Year
+    res = con.execute("SELECT YearOfStudy, count(*) from S24_Members group by YearOfStudy")
+    results_year= {}
+    for row in res:
+        results_year[row[0]] = [row[1]]
+
+    return {
+        'faculty': results_faculty, 
+        'gender': results_gender, 
+        'year': results_year}

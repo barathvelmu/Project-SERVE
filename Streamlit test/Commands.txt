@@ -1,0 +1,2 @@
+Streamlit: python -m streamlit run Home.py
+Flask: python -m flask --app api run
