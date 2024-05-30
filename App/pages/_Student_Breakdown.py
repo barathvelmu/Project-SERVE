@@ -3,13 +3,9 @@ import matplotlib.pyplot as plt
 import requests
 import pandas as pd
 
-
-st.set_page_config(page_title="SERVE Student Breakdown", page_icon="📈")
-
+st.set_page_config(page_title="Students", page_icon="📈")
 st.title("SERVE Breakdown")
-st.write(
-    """This page shows breakdowns of SERVE by Faculty, Gender and More!"""
-)
+st.write("This page shows breakdowns of SERVE by Faculty, Gender and More!")
 
 faculty, gender, year, students = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Year Breakdown", "All Students"])
 queries = requests.get("http://127.0.0.1:5000/StudentBreakdown").json()
@@ -23,6 +19,7 @@ with faculty:
 
     # Create the pie chart
     fig1, ax1 = plt.subplots()
+    fig1.set_facecolor('darkgrey')
     ax1.pie([x[0] for x in queries['faculty'].values()], labels=queries['faculty'].keys(), autopct='%1.0f%%', startangle=90)
     ax1.axis('equal')
     st.pyplot(fig1)
@@ -36,6 +33,7 @@ with gender:
 
     # Create the pie chart
     fig2, ax2 = plt.subplots()
+    fig2.set_facecolor('darkgrey')
     ax2.pie([x[0] for x in queries['gender'].values()], labels=queries['gender'].keys(), autopct='%1.0f%%', startangle=90)
     ax2.axis('equal')
     st.pyplot(fig2)
@@ -48,10 +46,11 @@ with year:
     st.write(gender_df)
 
     # Create the pie chart
-    fig2, ax2 = plt.subplots()
-    ax2.pie([x[0] for x in queries['year'].values()], labels=queries['year'].keys(), autopct='%1.0f%%', startangle=90)
-    ax2.axis('equal')
-    st.pyplot(fig2)
+    fig3, ax3 = plt.subplots()
+    fig3.set_facecolor('darkgrey')
+    ax3.pie([x[0] for x in queries['year'].values()], labels=queries['year'].keys(), autopct='%1.0f%%', startangle=90)
+    ax3.axis('equal')
+    st.pyplot(fig3)
     
 with students:
     st.title("All SERVE Members - Spring 2024")

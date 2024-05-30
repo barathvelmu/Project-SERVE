@@ -51,5 +51,13 @@ def test():
         'year': results_year,
         'students': results_all}
     
-""" @app.route('/form', methods = ['GET', 'POST'])
-def form(): """
+# @app.route('/form', methods = ['GET', 'POST'])
+def form_submit(email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+    con = sqlite3.connect("SERVE.db")
+    try:
+        con.execute("INSERT INTO S24_Members (Email, Name, Firstname, StudentNumber, Gender, YearofStudy, Faculty, LevelofPlay, OttawaVNLTripInterest) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+            (email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest))
+        con.commit()
+        return True
+    except Exception as e: 
+        return False
