@@ -2,7 +2,6 @@ from flask import Flask
 from flask_cors import CORS
 from flask import request
 import sqlite3
-import streamlit as st
 
 app = Flask(__name__)
 CORS(app)
@@ -60,6 +59,5 @@ def form_submit(email, full_name, firstname, student_id, gender, year_of_study, 
             (email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest))
         con.commit()
         return True
-    except Exception as e: 
-        st.error(f"Error: {e}")
+    except:
         return False
