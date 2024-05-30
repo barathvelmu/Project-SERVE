@@ -34,8 +34,22 @@ def test():
     results_year= {}
     for row in res:
         results_year[row[0]] = [row[1]]
+        
+    # All Students
+    con.row_factory = sqlite3.Row
+    res = con.execute("SELECT * FROM S24_Members")
+    rows = res.fetchall() # obtain all of the rows from query
+    results_all = []
+    for row in rows:
+        results_all.append(dict(row))
+        
+    con.close()
 
     return {
         'faculty': results_faculty, 
         'gender': results_gender, 
-        'year': results_year}
+        'year': results_year,
+        'students': results_all}
+    
+""" @app.route('/form', methods = ['GET', 'POST'])
+def form(): """

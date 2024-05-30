@@ -11,7 +11,7 @@ st.write(
     """This page shows breakdowns of SERVE by Faculty, Gender and More!"""
 )
 
-faculty, gender, year = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Year Breakdown"])
+faculty, gender, year, students = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Year Breakdown", "All Students"])
 queries = requests.get("http://127.0.0.1:5000/StudentBreakdown").json()
 
 with faculty:
@@ -52,3 +52,11 @@ with year:
     ax2.pie([x[0] for x in queries['year'].values()], labels=queries['year'].keys(), autopct='%1.0f%%', startangle=90)
     ax2.axis('equal')
     st.pyplot(fig2)
+    
+with students:
+    st.title("All SERVE Members - Spring 2024")
+    
+    # Convert the data into a DataFrame for better display
+    students_df = pd.DataFrame(queries['students'])
+    st.write(students_df)
+    
