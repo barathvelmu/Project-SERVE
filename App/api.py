@@ -2,6 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask import request
 import sqlite3
+import streamlit as st
 
 app = Flask(__name__)
 CORS(app)
@@ -55,9 +56,10 @@ def test():
 def form_submit(email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
     con = sqlite3.connect("SERVE.db")
     try:
-        con.execute("INSERT INTO S24_Members (Email, Name, Firstname, StudentNumber, Gender, YearofStudy, Faculty, LevelofPlay, OttawaVNLTripInterest) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+        con.execute("INSERT INTO S24_Members (Email, Name, Firstname, StudentNumber, Gender, YearofStudy, Faculty, LevelofPlay, OttawaVNLTripInterest, Completiontime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, strftime('%m/%d/%Y', 'now'))", 
             (email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest))
         con.commit()
         return True
     except Exception as e: 
+        st.error(f"Error: {e}")
         return False
