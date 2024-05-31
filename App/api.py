@@ -2,6 +2,10 @@ from flask import Flask
 from flask_cors import CORS
 from flask import request
 import sqlite3
+import string
+import random
+import smtplib
+from email.mime.text import MIMEText
 
 app = Flask(__name__)
 CORS(app)
@@ -61,3 +65,24 @@ def form_submit(email, full_name, firstname, student_id, gender, year_of_study, 
         return True
     except:
         return False
+
+@app.route('/sendcode', methods = ['GET', 'POST'])
+def send_code():
+    email = str(request.args.get('email'))
+    subject = "Email Subject"
+    body = "This is your password: " + ''.join(random.choices(string.ascii_uppercase + string.digits, k=25))
+    sender = "uwservedb@gmail.com"
+    recipients = [email]
+    password = "jrmbgzrphpeclhaq"
+    msg = MIMEText(body)
+    msg['Subject'] = subject
+    msg['From'] = sender
+    msg['To'] = ', '.join(recipients)
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp_server:
+        try:
+            smtp_server.login(sender, password)
+            smtp_server.sendmail(sender, recipients, msg.as_string())
+            st.write("Email Sent!")
+            return {'status': True}
+        except Exception as e:
+            return {'status': str(e)}
