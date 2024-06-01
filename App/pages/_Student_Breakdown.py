@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import requests
 import pandas as pd
 
-st.set_page_config(page_title="Students", page_icon="📈")
+st.set_page_config(page_title="Students", page_icon="🏐")
 st.title("SERVE Breakdown")
 st.write("This page shows breakdowns of SERVE by Faculty, Gender and More!")
 

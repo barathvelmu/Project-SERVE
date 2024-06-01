@@ -2,7 +2,7 @@ import streamlit as st
 from api import form_submit
 from email_validator import validate_email
 
-st.set_page_config(page_title="Form", page_icon="📈")
+st.set_page_config(page_title="Form", page_icon="🏐")
 st.title("SERVE Member Information Form")
 st.write("Register as a member here!")
 

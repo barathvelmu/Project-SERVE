@@ -68,9 +68,33 @@ def form_submit(email, full_name, firstname, student_id, gender, year_of_study, 
 
 @app.route('/sendcode', methods = ['GET', 'POST'])
 def send_code():
+    # Get email input
+    email = str(request.args.get('email'))
+
+    # Check if email is in S24_Members (count(Email) >= 1)
+    con = sqlite3.connect("SERVE.db")
+    result = con.execute("SELECT count(Email) FROM S24_Members where Email = '%s'" % (str(email))).fetchall()[0][0]
+    con.close()
+    if result == 0:
+        return {'status': "Please Register or contact Admin - Email not detected in database."}
+
+    # Generate and update password in Password (called code)
+    password = ''.join(random.choices(string.ascii_uppercase + string.digits, k=25))
+    con = sqlite3.connect("SERVE.db")
+    result = con.execute("SELECT count(Email) FROM Password where Email = '%s'" % (str(email))).fetchall()[0][0]
+    if result == 0: # Email never logged in, add new row
+        con.execute("INSERT INTO Password (Email, Code) VALUES ('%s', '%s')" % (email,password))
+        con.commit()
+        con.close()
+    else: # Email in table, update password
+        con.execute("UPDATE Password SET code = '%s' WHERE Email = '%s'"%(password, email))
+        con.commit()
+        con.close()
+
+    # if the email is registered send a custom code
     email = str(request.args.get('email'))
     subject = "Email Subject"
-    body = "This is your password: " + ''.join(random.choices(string.ascii_uppercase + string.digits, k=25))
+    body = "This is your password: " + password
     sender = "uwservedb@gmail.com"
     recipients = [email]
     password = "jrmbgzrphpeclhaq"
@@ -82,7 +106,17 @@ def send_code():
         try:
             smtp_server.login(sender, password)
             smtp_server.sendmail(sender, recipients, msg.as_string())
-            st.write("Email Sent!")
-            return {'status': True}
+            return {'status': "Code Sent! Please Enter Below"}
         except Exception as e:
-            return {'status': str(e)}
+            return {'status': "Error: " + str(e)}
+
+@app.route('/checkpassword', methods = ['GET', 'POST'])
+def check_password():
+    password = str(request.args.get('password'))
+    con = sqlite3.connect("SERVE.db")
+    result = con.execute("SELECT count(Email) FROM Password where Code = '%s'" % (str(password))).fetchall()[0][0]
+    con.close()
+    if result == 0:
+        return {'status': "Incorrect Password."}
+    else:
+        return {'status': "Login Successful!"}
