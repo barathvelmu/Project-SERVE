@@ -24,7 +24,7 @@ with st.form("Form", clear_on_submit=False):
         if res["status"] == 1:
             st.session_state["Login"] = True
             st.session_state["Email"] = email
-            st.write("Login Successful! App will log out on refresh.")
+            st.write("Login Successful!")
         else:
             st.write("Error. Please try again.")
 
