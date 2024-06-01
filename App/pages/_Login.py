@@ -17,7 +17,7 @@ with st.form("Password", clear_on_submit=False):
 
         if res["status"] == 1:
             st.session_state["Login"] = True
-            st.write("Login Successful!")
+            st.write("Login Successful! App will log out on refresh.")
         else:
             st.write("Error. Please try again.")
 
