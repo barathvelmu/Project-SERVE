@@ -2,9 +2,16 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import requests
 import pandas as pd
+from st_pages import Page, show_pages
 
 st.set_page_config(page_title="Students", page_icon="🏐")
 st.title("SERVE Breakdown")
+
+if 'Login' not in st.session_state:
+    st.session_state['Login'] = False
+
+if 'Email' not in st.session_state:
+    st.session_state['Email'] = False
 
 if st.session_state["Login"]:
     
@@ -62,4 +69,22 @@ if st.session_state["Login"]:
         st.write(students_df)
 else:
     st.write("Please login.")
-    
+
+
+if st.session_state["Login"]:
+    show_pages(
+        [
+            Page("Home.py", "Home"),
+            Page("pages/_Register.py", "Update Profile"),
+            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
+        ]
+    )
+else:
+    show_pages(
+        [
+            Page("Home.py", "Home"),
+            Page("pages/_Login.py", "Login"),
+            Page("pages/_Register.py", "Register"),
+            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
+        ]
+    )

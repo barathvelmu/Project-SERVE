@@ -1,10 +1,16 @@
 import streamlit as st
 from api import form_submit
 from email_validator import validate_email
+from st_pages import Page, show_pages
 
 st.set_page_config(page_title="Form", page_icon="🏐")
 st.title("SERVE Member Information Form")
-st.write("Register as a member here!")
+
+if 'Login' not in st.session_state:
+    st.session_state['Login'] = False
+
+if 'Email' not in st.session_state:
+    st.session_state['Email'] = False
 
 def allFieldsCompleted(email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
     if (email and full_name and firstname and lastname 
@@ -14,9 +20,19 @@ def allFieldsCompleted(email, full_name, firstname, student_id, gender, year_of_
     else: 
         return False
 
+
 # DID NOT HANDLE "EvaledLEVEL", "execinitial1", "execinitial2" yet
+if st.session_state["Login"]:
+    st.write("Edit your user information here!")
+else:
+    st.write("Register as a member here!")
+
 with st.form("Form", clear_on_submit=False):
-    email = st.text_input("Email")
+    if st.session_state["Login"]:
+        email = st.session_state["Email"]
+        st.code(st.session_state["Email"], language="markdown")
+    else:
+        email = st.text_input("Email")
     full_name = st.text_input("Full Name")
     firstname = st.text_input("Firstname")
     lastname = st.text_input("Lastname")
@@ -45,3 +61,20 @@ with st.form("Form", clear_on_submit=False):
                 
 
 
+if st.session_state["Login"]:
+    show_pages(
+        [
+            Page("Home.py", "Home"),
+            Page("pages/_Register.py", "Update Profile"),
+            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
+        ]
+    )
+else:
+    show_pages(
+        [
+            Page("Home.py", "Home"),
+            Page("pages/_Login.py", "Login"),
+            Page("pages/_Register.py", "Register"),
+            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
+        ]
+    )
