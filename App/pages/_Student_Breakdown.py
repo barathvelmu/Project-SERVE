@@ -2,7 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import requests
 import pandas as pd
-from st_pages import Page, show_pages
 from Home import set_session_tabs
 
 st.set_page_config(page_title="Students", page_icon="🏐")

@@ -1,6 +1,5 @@
 import streamlit as st
 import requests
-from st_pages import Page, show_pages
 from Home import set_session_tabs
 
 st.set_page_config(page_title="Login", page_icon="🏐")

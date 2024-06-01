@@ -1,7 +1,6 @@
 import streamlit as st
 from api import form_submit
 from email_validator import validate_email
-from st_pages import Page, show_pages
 from Home import set_session_tabs
 
 st.set_page_config(page_title="Form", page_icon="🏐")
