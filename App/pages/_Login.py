@@ -33,7 +33,7 @@ if st.session_state["Login"]:
     show_pages(
         [
             Page("Home.py", "Home"),
-            Page("pages/_Register.py", "Update Profile"),
+            Page("pages/_Register.py", "Update Profile for (%s)" % (st.session_state["Email"])),
             Page("pages/_Student_Breakdown.py", "Student Breakdown"),
         ]
     )
