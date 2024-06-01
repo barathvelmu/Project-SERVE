@@ -106,7 +106,7 @@ def send_code():
         try:
             smtp_server.login(sender, password)
             smtp_server.sendmail(sender, recipients, msg.as_string())
-            return {'status': "Code Sent! May take a few minutes! Please Enter Below:"}
+            return {'status': "Code Sent to Email! This may take a few minutes! Please use it below:"}
         except Exception as e:
             return {'status': "Error: " + str(e)}
 

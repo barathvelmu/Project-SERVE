@@ -15,20 +15,21 @@ st.write("""
     Welcome to the SERVE Student Portal! This page provides insights on the UWaterloo SERVE Club, alongside information on upcoming events and a way to update your information.
 """)
 
-if st.session_state["Login"]:
-    show_pages(
-        [
-            Page("Home.py", "Home"),
-            Page("pages/_Register.py", "Update Profile for (%s)" % (st.session_state["Email"])),
-            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
-        ]
-    )
-else:
-    show_pages(
-        [
-            Page("Home.py", "Home"),
-            Page("pages/_Login.py", "Login"),
-            Page("pages/_Register.py", "Register"),
-            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
-        ]
-    )
+def set_session_tabs():
+    if st.session_state["Login"]:
+        show_pages(
+            [
+                Page("Home.py", "Home"),
+                Page("pages/_Register.py", "Profile (%s)" % (st.session_state["Email"])),
+                Page("pages/_Student_Breakdown.py", "Student Breakdown"),
+            ]
+        )
+    else:
+        show_pages(
+            [
+                Page("Home.py", "Home"),
+                Page("pages/_Login.py", "Login"),
+                Page("pages/_Register.py", "Register"),
+                Page("pages/_Student_Breakdown.py", "Student Breakdown"),
+            ]
+        )

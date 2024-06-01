@@ -2,6 +2,7 @@ import streamlit as st
 from api import form_submit
 from email_validator import validate_email
 from st_pages import Page, show_pages
+from Home import set_session_tabs
 
 st.set_page_config(page_title="Form", page_icon="🏐")
 st.title("SERVE Member Information Form")
@@ -59,22 +60,4 @@ with st.form("Form", clear_on_submit=False):
         else:
             st.error("Please complete all fields.")
                 
-
-
-if st.session_state["Login"]:
-    show_pages(
-        [
-            Page("Home.py", "Home"),
-            Page("pages/_Register.py", "Update Profile for (%s)" % (st.session_state["Email"])),
-            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
-        ]
-    )
-else:
-    show_pages(
-        [
-            Page("Home.py", "Home"),
-            Page("pages/_Login.py", "Login"),
-            Page("pages/_Register.py", "Register"),
-            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
-        ]
-    )
+set_session_tabs()

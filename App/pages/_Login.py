@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 from st_pages import Page, show_pages
+from Home import set_session_tabs
 
 st.set_page_config(page_title="Login", page_icon="🏐")
 st.title("SERVE Member Login")
@@ -28,23 +29,8 @@ with st.form("Form", clear_on_submit=False):
         else:
             st.write("Error. Please try again.")
 
+st.warning("Account will be logged out on refresh.")
+set_session_tabs()
 
-if st.session_state["Login"]:
-    show_pages(
-        [
-            Page("Home.py", "Home"),
-            Page("pages/_Register.py", "Update Profile for (%s)" % (st.session_state["Email"])),
-            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
-        ]
-    )
-else:
-    show_pages(
-        [
-            Page("Home.py", "Home"),
-            Page("pages/_Login.py", "Login"),
-            Page("pages/_Register.py", "Register"),
-            Page("pages/_Student_Breakdown.py", "Student Breakdown"),
-        ]
-    )
 # https://myaccount.google.com/u/3/apppasswords
 # CS338DATABASE!
