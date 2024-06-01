@@ -14,8 +14,12 @@ with st.form("Password", clear_on_submit=False):
     password = st.text_input("Code (Sent To Email)")
     if st.form_submit_button("Login with Code"):
         res = requests.get("http://127.0.0.1:5000/checkpassword?password="+password).json()
-        st.write(res["status"])
-        
+
+        if res["status"] == 1:
+            st.session_state["Login"] = True
+            st.write("Login Successful!")
+        else:
+            st.write("Error. Please try again.")
 
 # https://myaccount.google.com/u/3/apppasswords
 # CS338DATABASE!

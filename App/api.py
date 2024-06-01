@@ -116,7 +116,7 @@ def check_password():
     con = sqlite3.connect("SERVE.db")
     result = con.execute("SELECT count(Email) FROM Password where Code = '%s'" % (str(password))).fetchall()[0][0]
     con.close()
-    if result == 0:
-        return {'status': "Incorrect Password."}
-    else:
-        return {'status': "Login Successful!"}
+    if result == 1: # success
+        return {'status': 1}
+    else: # fail
+        return {'status': 0}

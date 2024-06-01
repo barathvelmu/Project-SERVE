@@ -33,7 +33,7 @@ with st.form("Form", clear_on_submit=False):
                 try: 
                     validate_email(email)
                     if form_submit(email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
-                        st.success("Your student information has been updated! Please refresh the page!")
+                        st.success("Your student information has been added! Please log in through the Login tab.")
                     else: 
                         st.error("Update Failed. Please contact an administrator.")
                 except Exception as e:
