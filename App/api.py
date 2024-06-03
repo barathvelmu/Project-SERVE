@@ -97,12 +97,12 @@ def send_code():
     body = "This is your password: " + password
     sender = "uwservedb@gmail.com"
     recipients = [email]
-    password = "jrmbgzrphpeclhaq"
+    password = "yuqjdcbrvdhtkqku"
     msg = MIMEText(body)
     msg['Subject'] = subject
     msg['From'] = sender
     msg['To'] = ', '.join(recipients)
-    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp_server:
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp_server: #_SSL 465
         try:
             smtp_server.login(sender, password)
             smtp_server.sendmail(sender, recipients, msg.as_string())

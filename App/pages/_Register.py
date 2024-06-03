@@ -58,5 +58,7 @@ with st.form("Form", clear_on_submit=False):
                 st.error("Student number is invalid. Please enter the 8-digit number.")
         else:
             st.error("Please complete all fields.")
-                
+
+st.sidebar.image("logo.png")
+st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)                
 set_session_tabs()

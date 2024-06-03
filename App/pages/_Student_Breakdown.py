@@ -66,8 +66,10 @@ if st.session_state["Login"]:
         
         # Convert the data into a DataFrame for better display
         students_df = pd.DataFrame(queries['students'])
-        st.write(students_df)
+        st.dataframe(students_df.set_index("StudentNumber"))
 else:
-    st.write("Please login.")
+    st.warning("Please Login to see this page")
 
+st.sidebar.image("logo.png")
+st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)
 set_session_tabs()

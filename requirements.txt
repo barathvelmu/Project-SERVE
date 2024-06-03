@@ -45,6 +45,7 @@ rpds-py==0.18.1
 six==1.16.0
 smmap==5.0.1
 streamlit==1.34.0
+streamlit_extras
 st-pages
 tenacity==8.3.0
 toml==0.10.2
