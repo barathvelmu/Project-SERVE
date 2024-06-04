@@ -3,7 +3,7 @@ from api import form_submit
 from email_validator import validate_email
 from Home import set_session_tabs
 
-st.set_page_config(page_title="Form", page_icon="🏐")
+#st.set_page_config(page_title="Form", page_icon="🏐")
 st.title("SERVE Member Information Form")
 
 if 'Login' not in st.session_state:

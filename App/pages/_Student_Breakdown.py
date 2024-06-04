@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 from Home import set_session_tabs
 
-st.set_page_config(page_title="Students", page_icon="🏐")
+#st.set_page_config(page_title="Students", page_icon="🏐")
 st.title("SERVE Breakdown")
 
 if 'Login' not in st.session_state:

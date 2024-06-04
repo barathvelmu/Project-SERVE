@@ -2,7 +2,7 @@ import streamlit as st
 from st_pages import Page, show_pages
 from streamlit_extras.app_logo import add_logo
 
-st.set_page_config(page_title="Home", page_icon="🏐", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="UW Serve", page_icon="🏐", initial_sidebar_state="auto", menu_items=None)
 
 if 'Login' not in st.session_state:
     st.session_state['Login'] = False

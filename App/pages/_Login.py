@@ -2,14 +2,16 @@ import streamlit as st
 import requests
 from Home import set_session_tabs
 
-st.set_page_config(page_title="Login", page_icon="🏐")
-st.title("SERVE Member Login")
+#st.set_page_config(page_title="Login", page_icon="🏐")
+
 
 if 'Login' not in st.session_state:
     st.session_state['Login'] = False
 
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
+
+st.title("SERVE Member Login")
 
 with st.form("Form", clear_on_submit=False):
     email = st.text_input("Email")
