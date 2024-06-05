@@ -5,6 +5,8 @@ import pandas as pd
 from Home import set_session_tabs
 
 #st.set_page_config(page_title="Students", page_icon="🏐")
+st.sidebar.image("logo.png")
+st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)
 st.title("SERVE Breakdown")
 
 if 'Login' not in st.session_state:
@@ -70,6 +72,5 @@ if st.session_state["Login"]:
 else:
     st.warning("Please Login to see this page")
 
-st.sidebar.image("logo.png")
-st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)
+
 set_session_tabs()

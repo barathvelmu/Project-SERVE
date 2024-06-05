@@ -2,8 +2,10 @@ import streamlit as st
 import requests
 from Home import set_session_tabs
 
-#st.set_page_config(page_title="Login", page_icon="🏐")
 
+#st.set_page_config(page_title="Login", page_icon="🏐")
+st.sidebar.image("logo.png")
+st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)
 
 if 'Login' not in st.session_state:
     st.session_state['Login'] = False
@@ -33,8 +35,7 @@ with st.form("Form", clear_on_submit=False):
 st.warning("Account will be logged out on refresh.")
 set_session_tabs()
 
-st.sidebar.image("logo.png")
-st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)
+
 
 # https://myaccount.google.com/u/3/apppasswords
 # CS338DATABASE!

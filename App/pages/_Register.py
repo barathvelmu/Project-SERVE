@@ -4,6 +4,8 @@ from email_validator import validate_email
 from Home import set_session_tabs
 
 #st.set_page_config(page_title="Form", page_icon="🏐")
+st.sidebar.image("logo.png")
+st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)    
 st.title("SERVE Member Information Form")
 
 if 'Login' not in st.session_state:
@@ -59,6 +61,5 @@ with st.form("Form", clear_on_submit=False):
         else:
             st.error("Please complete all fields.")
 
-st.sidebar.image("logo.png")
-st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)                
+            
 set_session_tabs()
