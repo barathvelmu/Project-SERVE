@@ -1,0 +1,11 @@
+StdNo,Fname,Lname,Email,Gender,Faculty,Level,EvaluatorEmail
+21017215,Alexander Chai,Chai,aachai@uwaterloo.ca,Male,Mathematics,4.0,d78wong@uwaterloo.ca
+21012631,Alexandre,Chouinard,acchouin@uwaterloo.ca,Male,Health,4.0,d78wong@uwaterloo.ca
+20905813,Jake Masterson,Masterson,j3master@uwaterloo.ca,Male,Mathematics,4.0,d78wong@uwaterloo.ca
+21010674,Patrick Huang,Huang,py2huang@uwaterloo.ca,Male,Arts,4.0,d78wong@uwaterloo.ca
+21067881,Rein,Keppo,rkeppo@uwaterloo.ca,Male,Engineering,4.0,d78wong@uwaterloo.ca
+21111453,Seyed Mohammad Amin,Mirjalili,smamirja@uwaterloo.ca,Male,Engineering,3.0,d78wong@uwaterloo.ca
+12345678,Barath,Velmurugan,barathvelmu@gmail.com,Male,Mathematics,,
+20943292,Jaden,Noronha,j4noronh@uwaterloo.ca,Male,Mathematics,2.0,aliu@uwaterloo.ca
+21001713,Alissa,Chi,a2chi@uwaterloo.ca,Female,Science,3.0,aliu@uwaterloo.ca
+21001714,Saaniya,Saraf,s4saraf@uwaterloo.ca,Female,Engineering,,
