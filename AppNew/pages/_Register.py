@@ -14,8 +14,9 @@ if 'Login' not in st.session_state:
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
-def allFieldsCompleted(email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
-    if (email and full_name and firstname and lastname 
+def allFieldsCompleted(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+    st.write(email, firstname,lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest)
+    if (email and firstname and lastname 
               and student_id and gender and year_of_study 
               and faculty and level_of_play and ottawa_trip_interest): 
         return True
@@ -30,12 +31,14 @@ else:
     st.write("Register as a member here!")
 
 with st.form("Form", clear_on_submit=False):
+    logged_in = False
     if st.session_state["Login"]:
+        logged_in = True
         email = st.session_state["Email"]
         st.code(st.session_state["Email"], language="markdown")
     else:
         email = st.text_input("Email")
-    full_name = st.text_input("Full Name")
+
     firstname = st.text_input("Firstname")
     lastname = st.text_input("Lastname")
     student_id = st.number_input("Student Id", step=1, value = None) # Step = 1 used to make integer input only
@@ -46,20 +49,34 @@ with st.form("Form", clear_on_submit=False):
     ottawa_trip_interest = st.selectbox("Are you willing to go to Ottawa?", ["Yes", "No"], index = None)
 
     if st.form_submit_button("Submit"):
-        if allFieldsCompleted(email, full_name, firstname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+        if logged_in: # Update Info
+            print("WENT INTO THIS")
             if len(str(int(student_id))) == 8:
                 try: 
                     validate_email(email)
                     if form_submit(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
-                        st.success("Your student information has been added! Please log in through the Login tab.")
+                            st.success("Your student information has been updated!")
                     else: 
                         st.error("Update Failed. Please contact an administrator.")
                 except Exception as e:
                     st.error(f"Email format is invalid. ERROR: '{e}'.")
             else: 
                 st.error("Student number is invalid. Please enter the 8-digit number.")
-        else:
-            st.error("Please complete all fields.")
+        else: # Add new account
+            if allFieldsCompleted(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+                if len(str(int(student_id))) == 8:
+                    try: 
+                        validate_email(email)
+                        if form_submit(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+                            st.success("Your student information has been added! Please log in through the Login tab.")
+                        else: 
+                            st.error("Update Failed. Please contact an administrator.")
+                    except Exception as e:
+                        st.error(f"Email format is invalid. ERROR: '{e}'.")
+                else: 
+                    st.error("Student number is invalid. Please enter the 8-digit number.")
+            else:
+                st.error("Please complete all fields.")
 
             
 set_session_tabs()
