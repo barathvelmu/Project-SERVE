@@ -22,7 +22,6 @@ def set_session_tabs():
     else:
         show_pages(
             [
-                Page("Home.py", "Home"),
                 Page("pages/_Home_Page.py", "Home Page"),
                 Page("pages/_Login.py", "Login"),
                 Page("pages/_Register.py", "Register"),
