@@ -2,7 +2,9 @@ import streamlit as st
 from api import form_submit
 from email_validator import validate_email
 from Home import set_session_tabs
+from st_pages import Page, show_pages, hide_pages
 
+#hide_pages(["Home"])
 #st.set_page_config(page_title="Form", page_icon="🏐")
 st.sidebar.image("logo.png")
 st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)    

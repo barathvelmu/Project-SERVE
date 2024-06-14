@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 import requests
 import pandas as pd
 from Home import set_session_tabs
+from st_pages import Page, show_pages, hide_pages
 
+#hide_pages(["Home"])
 #st.set_page_config(page_title="Students", page_icon="🏐")
 st.sidebar.image("logo.png")
 st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)

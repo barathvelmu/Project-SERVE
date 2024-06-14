@@ -1,7 +1,9 @@
 import streamlit as st
 import requests
 from Home import set_session_tabs
+from st_pages import Page, show_pages, hide_pages
 
+#hide_pages(["Home"])
 
 #st.set_page_config(page_title="Login", page_icon="🏐")
 st.sidebar.image("logo.png")

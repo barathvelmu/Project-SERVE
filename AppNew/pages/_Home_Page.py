@@ -2,7 +2,7 @@ import streamlit as st
 from st_pages import Page, show_pages, hide_pages
 from Home import set_session_tabs
 
-hide_pages(["hide me!"])
+#hide_pages(["Home"])
 st.sidebar.image("logo.png")
 st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)
 
