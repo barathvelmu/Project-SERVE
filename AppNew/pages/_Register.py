@@ -50,7 +50,6 @@ with st.form("Form", clear_on_submit=False):
 
     if st.form_submit_button("Submit"):
         if logged_in: # Update Info
-            print("WENT INTO THIS")
             if len(str(int(student_id))) == 8:
                 try: 
                     validate_email(email)
