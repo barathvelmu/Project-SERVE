@@ -8,7 +8,7 @@ Repository for the final project of Group 13 for CS338 (Spring 2024)
 - **Database:** SQlite (if it limits us after construction of the ER diagram, we can consider MySQL)
 - **Visualization**: Pandas, Matplotlib
 
-**Reasoning:**
+**Reasoning**
 - **Streamlit:** easy to get the frontend working. Has prebuilt components and widgets for common tasks like adding buttons, sliders, text inputs. Jaden has working experience with it, so we will have some familiarity
 - **Flask:** Jaden has working experience with Flask. I also have little Python web-dev experience so I can try to learn some Flask to code.
 - **SQlite:** It is easy, very little configuration, recommended by the Project Document (CS 338), and is sheareable! 
