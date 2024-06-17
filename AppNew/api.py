@@ -113,7 +113,7 @@ def send_code():
     # Check if email is in S24_Members (count(Email) >= 1)
     con = sqlite3.connect("SERVE_SAMPLE.db")
     result = con.execute("SELECT count(Email) FROM Member where Email = '%s'" % (str(email))).fetchall()[0][0]
-    result_exec = con.execute("SELECT count(Email) FROM Executive where Email = '%s'" % (str(email))).fetchall()[0][0]
+    result_exec = 0 #con.execute("SELECT count(Email) FROM Executive where Email = '%s'" % (str(email))).fetchall()[0][0]
     con.close()
     if result == 0 and result_exec == 0:
         return {'status': "Please Register or contact Admin - Email not detected in database."}
