@@ -1,1 +1,0 @@
-Select Gender, count(*) from S24_Members group by Gender
