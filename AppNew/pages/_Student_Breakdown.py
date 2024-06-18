@@ -20,7 +20,7 @@ if 'Email' not in st.session_state:
 if st.session_state["Login"]:
     
     st.write("This page shows breakdowns of SERVE by Faculty, Gender and More!")
-    faculty, gender, year, students = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Year Breakdown", "All Students"])
+    faculty, gender, year, students = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Level Breakdown", "All Students"])
     queries = requests.get("http://127.0.0.1:5000/StudentBreakdown").json()
 
     with faculty:
