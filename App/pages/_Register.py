@@ -8,7 +8,7 @@ from st_pages import Page, show_pages, hide_pages
 #st.set_page_config(page_title="Form", page_icon="🏐")
 st.sidebar.image("logo.png")
 st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)    
-st.title("SERVE Member User Form")
+st.title("SERVE Member Form")
 
 if 'Login' not in st.session_state:
     st.session_state['Login'] = False
