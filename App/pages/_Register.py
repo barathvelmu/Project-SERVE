@@ -60,7 +60,7 @@ with st.form("Form", clear_on_submit=False):
                     else: 
                         st.error("Update Failed. Please contact an administrator.")
                 except Exception as e:
-                    st.error(f"Email format is invalid. ERROR: '{e}'.")
+                    st.error(f"Email format is invalid.")
             else: 
                 st.error("Student number is invalid. Please enter the 8-digit number.")
         else: # Add new account
@@ -73,7 +73,7 @@ with st.form("Form", clear_on_submit=False):
                         else: 
                             st.error("Update Failed. Please contact an administrator.")
                     except Exception as e:
-                        st.error(f"Email format is invalid. ERROR: '{e}'.")
+                        st.error(f"Email format is invalid.")
                 else: 
                     st.error("Student number is invalid. Please enter the 8-digit number.")
             else:

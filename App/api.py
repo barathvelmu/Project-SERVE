@@ -88,11 +88,11 @@ def form_submit(email, firstname, lastname, student_id, gender, year_of_study, f
         email_exists = con.execute("SELECT count(Email) FROM Member where Email = '%s'" % (str(email))).fetchall()[0][0] # 1 if account exists else 0
         print(email_exists)
         if email_exists == 0: # Email DNE, add new record
-            print("A")
+            # print("A")
             con.execute("INSERT INTO Member (StdNo, Fname, Lname, Email, Gender, Faculty, Level, EvaluatorEmail) VALUES (%s, '%s', '%s', '%s', '%s', '%s', '%s', NULL)" % 
                 (student_id, firstname, lastname, str(email), gender, faculty, level_of_play)) #Update Member
             con.commit()
-            print("B")
+            # print("B")
             con.execute("INSERT INTO Member_Valid_For_Term (Tcode, Email) values ('%s', '%s')" % ("S2024", str(email))) # Update Member_Valid_For_Term
             con.commit()
         else: # email exists, update
@@ -102,7 +102,7 @@ def form_submit(email, firstname, lastname, student_id, gender, year_of_study, f
         con.close()
         return True
     except Exception as e:
-        print(str(e))
+        # print(str(e))
         return False
 
 @app.route('/sendcode', methods = ['GET', 'POST'])
