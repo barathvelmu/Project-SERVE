@@ -17,7 +17,6 @@ if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
 def allFieldsCompleted(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
-    st.write(email, firstname,lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest)
     if (email and firstname and lastname 
               and student_id and gender and year_of_study 
               and faculty and level_of_play and ottawa_trip_interest): 
