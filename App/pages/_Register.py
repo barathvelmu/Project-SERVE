@@ -47,7 +47,6 @@ with st.form("Form", clear_on_submit=False):
     year_of_study = st.selectbox("What is your year of study?", ["1st year", "2nd year", "3rd year", "4th year", "5th year", "Alumni", "Graduate Student"], index = None)
     faculty = st.selectbox("What faculty are you part of?", ["Engineering", "Science", "Health", "Mathematics", "Environment", "Arts"], index = None)
     level_of_play = st.selectbox("What is your level of play?", ["Level 1", "Level 2", "Level 3", "Level 4"], index = None)
-    ottawa_trip_interest = st.selectbox("Are you willing to go to Ottawa?", ["Yes", "No"], index = None)
 
     if st.form_submit_button("Submit"):
         if logged_in: # Update Info
