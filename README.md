@@ -2,7 +2,7 @@
 Repository for the final project of Group 13 for CS338 (Spring 2024)
 
 ## Project Demo (Thus Far)
-To do!
+https://youtu.be/dOFKvirQiRU.
 
 ## Features Currently Supported
 - Viewing Aggregate Statisics of the SERVE Club *by Faculty, Gender, and Level* ("Student Breakdown")
