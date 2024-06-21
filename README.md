@@ -13,7 +13,7 @@ https://youtu.be/dOFKvirQiRU (Will not natively open in a new tab)
 
 ## Running the Project
 1. Ensure that you have all of the libraries installed as described in requirements.txt using `pip install -r requirements.txt`
-2. As our team is using SQlite for the database, there are no additional steps to set it up! It is already accounted for by continuing with the next steps.
+2. As our team is using SQLite for the database, there are no additional steps to set it up! It is already accounted for by continuing with the next steps.
 3. Open Command Prompt / Terminal. Navigate to the "App" folder in the repository.
 4. Launch the Flask API (backend) by running the command `python -m flask --app api run`.
 5. Once the Flask API is running, open a new instance of Command Prompt / Terminal. Please keep the previous instance open as the backend and frontend have to run simultaneously.
@@ -24,7 +24,7 @@ https://youtu.be/dOFKvirQiRU (Will not natively open in a new tab)
 ## Tech Stack
 - **Frontend:** Streamlit
 - **Backend:** Flask
-- **Database:** SQlite 
+- **Database:** SQLite 
 - **Visualization**: Pandas, Matplotlib
 
 ## Note on Commits
