@@ -41,3 +41,38 @@
 (None, 2)
 ('aliu@uwaterloo.ca', 2)
 ('d78wong@uwaterloo.ca', 6)
+
+# Students by Faculty
+('Arts', 1)
+('Engineering', 3)
+('Health', 1)     
+('Mathematics', 4)
+('Science', 1)
+
+# Students by Gender
+('Female', 2)
+('Male', 8)
+
+# Students by Level
+('2.0', 1)
+('3.0', 2)
+('4.0', 5)
+('Not Assigned', 2)
+
+# All Students
+('Alexander Chai Chai', 'Male', 'Mathematics', '4.0')
+('Alexandre Chouinard', 'Male', 'Health', '4.0')
+('Alissa Chi', 'Female', 'Science', '3.0')
+('Barath Velmurugan', 'Male', 'Mathematics', None)
+('Jaden Noronha', 'Male', 'Mathematics', '2.0')
+('Jake Masterson Masterson', 'Male', 'Mathematics', '4.0')
+('Patrick Huang Huang', 'Male', 'Arts', '4.0')
+('Rein Keppo', 'Male', 'Engineering', '4.0')
+('Saaniya Saraf', 'Female', 'Engineering', None)
+('Seyed Mohammad Amin Mirjalili', 'Male', 'Engineering', '3.0')
+
+# Check if Email Exists
+- Depends on input (0, )
+
+# Check if Password Exists
+- Depends on input (0, )
