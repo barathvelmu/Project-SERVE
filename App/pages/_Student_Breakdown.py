@@ -24,7 +24,7 @@ if st.session_state["Login"]:
     queries = requests.get("http://127.0.0.1:5000/StudentBreakdown").json()
 
     with faculty:
-        st.title("SERVE Members by Faculty - Spring 2024")
+        st.title("Members by Faculty - Spring 2024")
 
         # Convert the data into a DataFrame for better display
         faculty_df = pd.DataFrame(queries['faculty'])
@@ -38,7 +38,7 @@ if st.session_state["Login"]:
         st.pyplot(fig1)
 
     with gender:
-        st.title("SERVE Members by Gender - Spring 2024")
+        st.title("Members by Gender - Spring 2024")
         
         # Convert the data into a DataFrame for better display
         gender_df = pd.DataFrame(queries['gender'])
@@ -52,7 +52,7 @@ if st.session_state["Login"]:
         st.pyplot(fig2)
 
     with year:
-        st.title("SERVE Members by Level - Spring 2024")
+        st.title("Members by Level - Spring 2024")
         
         # Convert the data into a DataFrame for better display
         gender_df = pd.DataFrame(queries['year'])
@@ -66,7 +66,7 @@ if st.session_state["Login"]:
         st.pyplot(fig3)
         
     with students:
-        st.title("All SERVE Members - Spring 2024")
+        st.title("All Members - Spring 2024")
         
         # Convert the data into a DataFrame for better display
         students_df = pd.DataFrame(queries['students'])
