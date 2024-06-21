@@ -92,7 +92,7 @@ CREATE TABLE "Member_Attend_Session" (
 	PRIMARY KEY("Email","EventId")
 );
 
-CREATE TABLE "Member-Make-Team" (
+CREATE TABLE "Member_Make_Team" (
 	"Email"	TEXT NOT NULL,
 	"TeamId"	TEXT NOT NULL,
 	FOREIGN KEY("Email") REFERENCES "Member"("Email"),
