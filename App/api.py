@@ -82,7 +82,7 @@ def test():
         'students': results_all}
     
 # @app.route('/form', methods = ['GET', 'POST'])
-def form_submit(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+def form_submit(email, firstname, lastname, student_id, gender, faculty, level_of_play):
     con = sqlite3.connect("SERVE_SAMPLE.db")
     try:
         email_exists = con.execute("SELECT count(Email) FROM Member where Email = '%s'" % (str(email))).fetchall()[0][0] # 1 if account exists else 0

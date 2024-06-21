@@ -53,7 +53,7 @@ with st.form("Form", clear_on_submit=False):
             if len(str(int(student_id))) == 8:
                 try: 
                     validate_email(email)
-                    if form_submit(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+                    if form_submit(email, firstname, lastname, student_id, gender, faculty, level_of_play):
                             st.success("Your student information has been updated!")
                     else: 
                         st.error("Update Failed. Please contact an administrator.")
@@ -62,11 +62,11 @@ with st.form("Form", clear_on_submit=False):
             else: 
                 st.error("Student number is invalid. Please enter the 8-digit number.")
         else: # Add new account
-            if allFieldsCompleted(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+            if allFieldsCompleted(email, firstname, lastname, student_id, gender, faculty, level_of_play):
                 if len(str(int(student_id))) == 8:
                     try: 
                         validate_email(email)
-                        if form_submit(email, firstname, lastname, student_id, gender, year_of_study, faculty, level_of_play, ottawa_trip_interest):
+                        if form_submit(email, firstname, lastname, student_id, gender, faculty, level_of_play):
                             st.success("Your student information has been added! Please log in through the Login tab.")
                         else: 
                             st.error("Update Failed. Please contact an administrator.")
