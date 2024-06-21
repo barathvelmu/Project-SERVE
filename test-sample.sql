@@ -51,6 +51,8 @@ Order by Name
 -- Check if email exists
 SELECT count(Email) FROM Member where Email = '%s'
 
+-- Check if password exists
+SELECT count(Email) FROM Account where Password = '%s'
 
 -- con.execute("INSERT INTO S24_Members (Email, Name, Firstname, StudentNumber, Gender, YearofStudy, Faculty, LevelofPlay, OttawaVNLTripInterest, Completiontime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, strftime('%m/%d/%Y', 'now'))", 
 --             (email, full_name, firstname, student_id, gender, faculty, level_of_play))

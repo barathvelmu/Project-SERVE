@@ -48,6 +48,8 @@ cursor.execute("""SELECT Fname || " " || Lname as Name, Gender, Faculty, Level
     """)
 # Check if email exists
 cursor.execute("SELECT count(Email) FROM Member where Email = '%s'")
+# Check if password exists
+cursor.execute("SELECT count(Email) FROM Account where Password = '%s'")
 
 rows = cursor.fetchall()
 
@@ -56,4 +58,3 @@ for row in rows:
 
 cursor.close()
 con.close()
-
