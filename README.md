@@ -1,8 +1,8 @@
-# Project-SERVE (CS 338, 2024) 🚀
+# Project-SERVE 🚀
 Repository for the final project of Group 13 for CS338 (Spring 2024)
 
 ## Project Demo (Thus Far)
-https://youtu.be/dOFKvirQiRU.
+https://youtu.be/dOFKvirQiRU (Will not natively open in a new tab)
 
 ## Features Currently Supported
 - Viewing Aggregate Statisics of the SERVE Club *by Faculty, Gender, and Level* ("Student Breakdown")
@@ -13,10 +13,11 @@ https://youtu.be/dOFKvirQiRU.
 
 ## Running the Project
 1. Ensure that you have all of the libraries installed as described in requirements.txt using `pip install -r requirements.txt`
-2. As our team is using SQlite for the database, there are no additional steps to set it up! It is accounted for with the next steps! 
+2. As our team is using SQlite for the database, there are no additional steps to set it up! It is already accounted for by continuing with the next steps.
 3. Open Command Prompt / Terminal. Navigate to the "App" folder in the repository.
-4. Launch the Flask API by running the command `python -m flask --app api run`.
-5. Once the Flask API is running, open a new instance of Command Prompt / Terminal. Please keep the previous instance open as the backend and frontend have to run simultaneously. Navigate to the "App" folder and launch the Streamlit frontend by running the command `python -m streamlit run Tabs.py`.
+4. Launch the Flask API (backend) by running the command `python -m flask --app api run`.
+5. Once the Flask API is running, open a new instance of Command Prompt / Terminal. Please keep the previous instance open as the backend and frontend have to run simultaneously.
+6. Navigate to the "App" folder and launch the Streamlit (frontend) by running the command `python -m streamlit run Tabs.py`.
 
 **Please ensure that the file structure in the App folder is unchanged. Both the Flask API and the Streamlit frontend rely on the folder structure in order to run.**
 
