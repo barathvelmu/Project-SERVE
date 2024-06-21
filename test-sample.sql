@@ -24,7 +24,7 @@ on Member.Email = Member_Valid_For_Term.Email
 where Member_Valid_For_Term.Tcode = "S2024"
 group by Faculty
 
--- Studends by Gender
+-- Students by Gender
 SELECT Gender, count(*)
 from Member
 inner join Member_Valid_For_Term
