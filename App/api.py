@@ -19,7 +19,7 @@ def home():
 
 @app.route('/StudentBreakdown', methods = ['GET', 'POST'])
 def test():
-    con = sqlite3.connect("SERVE_SAMPLE.db")
+    con = sqlite3.connect("SERVE_PROD.db")
 
     # Students by Faculty
     res = con.execute("""select Faculty, count(*)
@@ -83,7 +83,7 @@ def test():
     
 # @app.route('/form', methods = ['GET', 'POST'])
 def form_submit(email, firstname, lastname, student_id, gender, faculty, level_of_play):
-    con = sqlite3.connect("SERVE_SAMPLE.db")
+    con = sqlite3.connect("SERVE_PROD.db")
     try:
         email_exists = con.execute("SELECT count(Email) FROM Member where Email = '%s'" % (str(email))).fetchall()[0][0] # 1 if account exists else 0
         print(email_exists)
@@ -111,7 +111,7 @@ def send_code():
     email = str(request.args.get('email'))
 
     # Check if email is in S24_Members (count(Email) >= 1)
-    con = sqlite3.connect("SERVE_SAMPLE.db")
+    con = sqlite3.connect("SERVE_PROD.db")
     result = con.execute("SELECT count(Email) FROM Member where Email = '%s'" % (str(email))).fetchall()[0][0]
     result_exec = 0 #con.execute("SELECT count(Email) FROM Executive where Email = '%s'" % (str(email))).fetchall()[0][0]
     con.close()
@@ -120,7 +120,7 @@ def send_code():
 
     # Generate and update password in Password (called code)
     password = ''.join(random.choices(string.ascii_uppercase + string.digits, k=25))
-    con = sqlite3.connect("SERVE_SAMPLE.db")
+    con = sqlite3.connect("SERVE_PROD.db")
     result = con.execute("SELECT count(Email) FROM Account where Email = '%s'" % (str(email))).fetchall()[0][0]
     if result == 0: # Email never logged in, add new row
         con.execute("INSERT INTO Account (Password, Email) VALUES ('%s', '%s')" % (password, email))
@@ -153,10 +153,38 @@ def send_code():
 @app.route('/checkpassword', methods = ['GET', 'POST'])
 def check_password():
     password = str(request.args.get('password'))
-    con = sqlite3.connect("SERVE_SAMPLE.db")
+    con = sqlite3.connect("SERVE_PROD.db")
     result = con.execute("SELECT count(Email) FROM Account where Password = '%s'" % (str(password))).fetchall()[0][0]
     con.close()
     if result == 1: # success
         return {'status': 1}
     else: # fail
         return {'status': 0}
+
+@app.route('/session', methods = ['GET', 'POST'])
+def session():
+
+    con = sqlite3.connect("SERVE_PROD.db")
+    teams = con.execute("""SELECT Team.TeamName, Tournament.TorneyName, Tournament.Date, Tournament.StartTime, Tournament.EndTime, Tournament.Location
+                            From Team
+                            INNER JOIN Tournament
+                            ON Team.EventId = Tournament.EventId
+                            WHERE Tcode = 'S2024'""").fetchall()
+    events = con.execute("""SELECT distinct Tournament.TorneyName, Tournament.Date, Tournament.StartTime, Tournament.EndTime, Tournament.Location
+                            From Tournament
+                            WHERE Tcode = 'S2024'""").fetchall()
+    con.close()
+    return {"teams": teams, "events": events}
+
+"""
+With Teams as (
+SELECT *
+From Team
+INNER JOIN Tournament
+ON Team.EventId = Tournament.EventId
+WHERE Tcode = 'S2024'
+) SELECT Email, Teams.TeamName
+From Member_Make_Team
+inner JOIN Teams
+on Teams.TeamId = Member_Make_Team.TeamId
+"""

@@ -16,10 +16,10 @@ if 'Login' not in st.session_state:
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
-def allFieldsCompleted(email, firstname, lastname, student_id, gender, faculty, level_of_play):
+def allFieldsCompleted(email, firstname, lastname, student_id, gender, faculty):
     if (email and firstname and lastname 
               and student_id and gender 
-              and faculty and level_of_play): 
+              and faculty): 
         return True
     else: 
         return False
@@ -46,14 +46,14 @@ with st.form("Form", clear_on_submit=False):
     gender = st.selectbox("What is your gender?", ["Male", "Female", "Other"], index = None)
     # year_of_study = st.selectbox("What is your year of study?", ["1st year", "2nd year", "3rd year", "4th year", "5th year", "Alumni", "Graduate Student"], index = None)
     faculty = st.selectbox("What faculty are you part of?", ["Engineering", "Science", "Health", "Mathematics", "Environment", "Arts"], index = None)
-    level_of_play = st.selectbox("What is your level of play?", ["Level 1", "Level 2", "Level 3", "Level 4"], index = None)
+    level_of_play = st.selectbox("What is your level of play? (OPTIONAL)", ["1", "2", "3", "4"], index = None)
 
     if st.form_submit_button("Submit"):
         if logged_in: # Update Info
             if len(str(int(student_id))) == 8:
                 try: 
                     validate_email(email)
-                    if form_submit(email, firstname, lastname, student_id, gender, faculty, level_of_play):
+                    if form_submit(email.lower(), firstname, lastname, student_id, gender, faculty, level_of_play):
                             st.success("Your student information has been updated!")
                     else: 
                         st.error("Update Failed. Please contact an administrator.")
@@ -66,7 +66,7 @@ with st.form("Form", clear_on_submit=False):
                 if len(str(int(student_id))) == 8:
                     try: 
                         validate_email(email)
-                        if form_submit(email, firstname, lastname, student_id, gender, faculty, level_of_play):
+                        if form_submit(email.lower(), firstname, lastname, student_id, gender, faculty, level_of_play):
                             st.success("Your student information has been added! Please log in through the Login tab.")
                         else: 
                             st.error("Update Failed. Please contact an administrator.")
