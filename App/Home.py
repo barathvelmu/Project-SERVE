@@ -16,6 +16,7 @@ def set_session_tabs():
             [
                 Page("pages/_Home_Page.py", "Home Page"),
                 Page("pages/_Register.py", "Profile (%s)" % (st.session_state["Email"])),
+                Page("pages/_Sessions.py", "Sessions"),
                 Page("pages/_Tournaments.py", "Tournaments"),
                 Page("pages/_Student_Breakdown.py", "Student Breakdown"),
             ]
@@ -26,6 +27,7 @@ def set_session_tabs():
                 Page("pages/_Home_Page.py", "Home Page"),
                 Page("pages/_Login.py", "Login"),
                 Page("pages/_Register.py", "Register"),
+                Page("pages/_Sessions.py", "Sessions"),
                 Page("pages/_Tournaments.py", "Tournaments"),
                 Page("pages/_Student_Breakdown.py", "Student Breakdown"),
             ]

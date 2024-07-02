@@ -161,30 +161,84 @@ def check_password():
     else: # fail
         return {'status': 0}
 
+@app.route('/tournament', methods = ['GET', 'POST'])
+def torunament():
+
+    con = sqlite3.connect("SERVE_PROD.db")
+    events = con.execute("""SELECT distinct Tournament.TorneyName, Tournament.Date, Tournament.StartTime, Tournament.EndTime, Tournament.Location, Tournament.EventId
+                            From Tournament""").fetchall()
+    con.close()
+    return {"events": events}
+
+@app.route('/team_info', methods = ['GET', 'POST'])
+def tournament_info():
+    TId = str(request.args.get('Id'))
+    con = sqlite3.connect("SERVE_PROD.db")
+    teams = con.execute("""
+                            SELECT Member.Fname || " " || Member.Lname as Member_Name, Member.Level, Team.TeamName
+                            From Team
+                            INNER JOIN Tournament
+                            ON Team.EventId = Tournament.EventId
+                            Inner Join Member_Make_Team
+                            on Member_Make_Team.TeamId = Team.TeamId
+                            Inner join Member
+                            on Member.Email = Member_Make_Team.Email
+                            WHERE Tournament.EventId = '%s'
+                        """%(TId)).fetchall()
+    con.close()
+    return {"teams": teams}
+
 @app.route('/session', methods = ['GET', 'POST'])
 def session():
 
     con = sqlite3.connect("SERVE_PROD.db")
-    teams = con.execute("""SELECT Team.TeamName, Tournament.TorneyName, Tournament.Date, Tournament.StartTime, Tournament.EndTime, Tournament.Location
-                            From Team
-                            INNER JOIN Tournament
-                            ON Team.EventId = Tournament.EventId
-                            WHERE Tcode = 'S2024'""").fetchall()
-    events = con.execute("""SELECT distinct Tournament.TorneyName, Tournament.Date, Tournament.StartTime, Tournament.EndTime, Tournament.Location
-                            From Tournament
-                            WHERE Tcode = 'S2024'""").fetchall()
+    events = con.execute("""select session.EventId, session.Date, Session.StartTime, Session.EndTime, Session.Location, count(Member_Attend_Session.Email) as participant_count, Session_Levels.Level
+                        from session
+                        inner join Member_Attend_Session
+                        on session.EventId = Member_Attend_Session.EventId
+                        inner join Session_Levels
+                        on Session_Levels.EventId = Session.EventId
+                        group by session.EventId
+                        """).fetchall()
     con.close()
-    return {"teams": teams, "events": events}
+    return {"events": events}
 
-"""
-With Teams as (
-SELECT *
-From Team
-INNER JOIN Tournament
-ON Team.EventId = Tournament.EventId
-WHERE Tcode = 'S2024'
-) SELECT Email, Teams.TeamName
-From Member_Make_Team
-inner JOIN Teams
-on Teams.TeamId = Member_Make_Team.TeamId
-"""
+@app.route('/session_register', methods = ['GET', 'POST'])
+def session_register():
+    """
+    Action key:
+    0: check if a student is registered (when first clicking on session in calendar)
+    1: update not registered to registered
+    2: update registered to not registered
+    """
+    email = str(request.args.get('email'))
+    session = str(request.args.get('session'))
+    action = str(request.args.get('action'))
+    print(email)
+    print(session)
+    print(action)
+    con = sqlite3.connect("SERVE_PROD.db")
+
+    if action == '1': # register
+        register = con.execute("""
+            Insert into Member_Attend_Session values('%s', '%s')
+        """%(email,session))
+        print("hi")
+        con.commit()
+        con.close()
+        
+    elif action == '2': # unregister
+        register = con.execute("""
+            delete from Member_Attend_Session where Email = '%s' and EventId = '%s'
+        """%(email,session))
+        print("hey")
+        con.commit()
+        con.close()
+        
+    con = sqlite3.connect("SERVE_PROD.db")
+    events = con.execute("""select count(*)
+                    from Member_Attend_Session
+                    where Member_Attend_Session.Email = '%s' and Member_Attend_Session.EventId = '%s'
+                    """ % (email, session)).fetchall()[0][0]
+    con.close()
+    return {"output": events}

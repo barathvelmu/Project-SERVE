@@ -10,7 +10,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20854124,Aaron,Packull,apackull@uwaterloo.ca,,Science,,
 20871950,Aaron,Zhang,a257zhan@uwaterloo.ca,,Mathematics,4,s65chung@uwaterloo.ca
 20876749,Aaryaman,Bhageria,abhageri@uwaterloo.ca,Male,Mathematics,4,susas@uwaterloo.ca
-20992497,Aashi Patel,Patel,aa2patel@uwaterloo.ca,Female,Engineering,1,i5yu@uwaterloo.ca
+20992497,Aashi,Patel,aa2patel@uwaterloo.ca,Female,Engineering,1,i5yu@uwaterloo.ca
 21029855,Aathithan,Karunakaran,a2karuna@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
 21080587,Abbey,Schill,a4schill@uwaterloo.ca,Female,Science,3,d78wong@uwaterloo.ca
 20901153,Abdul-Hannan,Ahmad,A97ahmad@uwaterloo.ca,,Health,2,s65chung@uwaterloo.ca
@@ -35,7 +35,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20835786,Agnes,Su,A7su@uwaterloo.ca,,Science,1,h2hsieh@uwaterloo.ca
 20814727,Aidan,Gratton,agratton@uwaterloo.ca ,Male,Engineering,4,r5fu@uwaterloo.ca
 20825822,Aileen,Chan,a256chan@uwaterloo.ca,Female,Health,4,r225zhu@uwaterloo.ca
-20951620,Ailu ,Pereklita,Aperekli@uwaterloo.ca,Female,Environment,4,d22cai@uwaterloo.ca
+20951620,Ailu,Pereklita,Aperekli@uwaterloo.ca,Female,Environment,4,d22cai@uwaterloo.ca
 20947979,Akshay,Thambipillai,athambip@uwaterloo.ca,Male,Mathematics,,
 20885641,Albert,Tran,albertq.tran1@gmail.com,,Engineering,3,cmlee@uwaterloo.ca
 20901171,Albert,Wu,a76wu@uwaterloo.ca,Male,Engineering,,
@@ -51,13 +51,13 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20943180,Alexander,Chow,a55chow@uwaterloo.ca,Male,Engineering,3,t389liu@uwaterloo.ca
 21065304,Alexander,Hill,a6hill@uwaterloo.ca,,Engineering,,
 20929599,Alexander,Hutchinson,a7hutchi@uwaterloo.ca,Male,Engineering,2,d78wong@uwaterloo.ca
-21017215,Alexander Chai,Chai,aachai@uwaterloo.ca,Male,Mathematics,4,d78wong@uwaterloo.ca
+21017215,Alexander,Chai,aachai@uwaterloo.ca,Male,Mathematics,4,d78wong@uwaterloo.ca
 21012631,Alexandre,Chouinard,acchouin@uwaterloo.ca,Male,Health,4,r225zhu@uwaterloo.ca
 20991830,Alia,Nanji,a2nanji@uwaterloo.ca,Female,Environment,,
 20817864,Alice,Li,Ky24li@uwaterloo.ca,Female,Mathematics,3,d78wong@uwaterloo.ca
-21066842,Alice ,Ma,a64ma@uwaterloo.ca,Female,Health,1,r5fu@uwaterloo.ca
+21066842,Alice,Ma,a64ma@uwaterloo.ca,Female,Health,1,r5fu@uwaterloo.ca
 20842914,Alicia,Pan,a29pan@uwaterloo.ca,,Engineering,2,d22cai@uwaterloo.ca
-21086692,Alisa ,Yang,azyyang@uwaterloo.ca,Female,Science,1,j2447zha@uwaterloo.ca
+21086692,Alisa,Yang,azyyang@uwaterloo.ca,Female,Science,1,j2447zha@uwaterloo.ca
 21001713,Alissa,Chi,a2chi@uwaterloo.ca,Female,Science,3,a229liu@uwaterloo.ca
 21063219,Allan,Li,A448li@uwaterloo.ca,,Mathematics,,
 20949813,Allan,Yin,a7yin@uwaterloo.ca,,Mathematics,2,cmlee@uwaterloo.ca
@@ -89,13 +89,13 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20849799,Andrew,Tersigni,a4tersig@uwaterloo.ca,,Engineering,2,e48huang@uwaterloo.ca
 21095912,Andrew,Tretyakov,atretyak@uwaterloo.ca,Male,Mathematics,3,ericwei642@gmail.com
 20894291,Andrew,Trieu,a2trieu@uwaterloo.ca,,Engineering,2,i5yu@uwaterloo.ca
-21007075,Andrew ,Li,a32li@uwaterloo.ca,Male,Mathematics,4,shjoo@uwaterloo.ca
+21007075,Andrew,Li,a32li@uwaterloo.ca,Male,Mathematics,4,shjoo@uwaterloo.ca
 20849541,Andy,Huang,a73huang@uwaterloo.ca,Male,Engineering,2,t389liu@uwaterloo.ca
 20819134,Andy,Lee,mk9lee@uwaterloo.ca,Male,Engineering,3,t389liu@uwaterloo.ca
 20909478,Andy,Zhao,a49zhao@uwaterloo.ca,Male,Mathematics,4,i5yu@uwaterloo.ca
 20873399,Ang,Zhu,a39zhu@uwaterloo.ca,Female,Mathematics,1,d78wong@uwaterloo.ca
-21055882,Angela Ji,Ji,z2ji@uwaterloo.ca,Female,Mathematics,1,s5feng@uwaterloo.ca
-20969612,Angelina kathleen,Kathleen,Akathlee@uwaterloo.ca,Female,Mathematics,1,i5yu@uwaterloo.ca
+21055882,Angela,Ji,z2ji@uwaterloo.ca,Female,Mathematics,1,s5feng@uwaterloo.ca
+20969612,Angelina,Kathleen,Akathlee@uwaterloo.ca,Female,Mathematics,1,i5yu@uwaterloo.ca
 20995662,Aninda,Saha,aninda.saha27@gmail.com,Male,Engineering,,
 21057550,ann,chang,annc5076@gmail.com,Female,Arts,4,r225zhu@uwaterloo.ca
 21168129,Anna,Polova,apolova@uwaterloo.ca,Female,Engineering,1,j5shang@uwaterloo.ca
@@ -110,7 +110,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20822945,Anthony,Norkus,Anorkus@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
 20967378,Anthony,Pozharskiy,apozhars@uwaterloo.ca,,Engineering,,
 20945626,Anthony,So,ayfso@uwaterloo.ca,Male,Science,,
-20834719,Archan ,Patel,a432pate@uwaterloo.ca,Male,Engineering,,
+20834719,Archan,Patel,a432pate@uwaterloo.ca,Male,Engineering,,
 20840743,Ariel,Milne,a3milne@uwaterloo.ca,Female,Engineering,2,d22cai@uwaterloo.ca
 20958516,Armaan,Bajwa,as2bajwa@uwaterloo.ca,,Science,,
 20716621,Arman,Naeimian,armannaeimian@gmail.com,Male,Mathematics,2,d22cai@uwaterloo.ca
@@ -125,7 +125,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20912989,Aseel,Osman,a39osman@uwaterloo.ca,Female,Engineering,,
 20925583,Ashley,Chea,A3chea@uwaterloo.ca,Female,Science,2,t389liu@uwaterloo.ca
 21025306,Ashley,George,ab5georg@uwaterloo.ca,Female,Health,,
-20957791,Aslan ,Aydin ,Naydin@uwaterloo.ca,Non-Binary,Arts,1,r5fu@uwaterloo.ca
+20957791,Aslan,Aydin ,Naydin@uwaterloo.ca,Non-Binary,Arts,1,r5fu@uwaterloo.ca
 21078850,Aswad,Tariq,a8tariq@uwaterloo.ca,Male,Mathematics,4,d22cai@uwaterloo.ca
 20968047,Attar,Aziz,a35aziz@uwaterloo.ca,Male,Engineering,3,r5fu@uwaterloo.ca
 20840662,Aubrey,Mahoro,amahoro@uwaterloo.ca,,Arts,4,cmlee@uwaterloo.ca
@@ -143,7 +143,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21011528,Batool,Noweir ,Bnoweir@uwaterloo.ca,Female,Engineering,1,j5shang@uwaterloo.ca
 20893795,Becky,Fuh,rfuh@uwaterloo.ca,Female,Engineering,4,i5yu@uwaterloo.ca
 20905372,belle,ouyang,b3ouyang@gmail.com,Female,Health,1,i5yu@uwaterloo.ca
-21102301,Belle ,Liu,b75liu@uwaterloo.ca,Female,Mathematics,1,s5feng@uwaterloo.ca
+21102301,Belle,Liu,b75liu@uwaterloo.ca,Female,Mathematics,1,s5feng@uwaterloo.ca
 20940401,Ben,Fogerty,bfogerty@uwaterloo.ca,Male,Engineering,2,c249zhou@uwaterloo.ca
 20862036,Ben,Huebner,Bhuebner@uwaterloo.ca,Male,Health,4,susas@uwaterloo.ca
 21064594,Benjamin,Bai,B3bai@uwaterloo.ca,,Mathematics,4,d78wong@uwaterloo.ca
@@ -152,16 +152,16 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20838614,Bennett,Lai,b5lai@uwaterloo.ca,Male,Mathematics,1,shjoo@uwaterloo.ca
 20735514,Bharat,Shamsukha,bshamsuk@uwaterloo.ca,Male,Science,4,cmlee@uwaterloo.ca
 21094104,Bilal,Shakeel,B2shakee@uwaterloo.ca ,,Health,,
-20935519,Blake Prescott,Prescott,bprescot@uwaterloo.ca,Male,Engineering,2,i5yu@uwaterloo.ca
+20935519,Blake,Prescott,bprescot@uwaterloo.ca,Male,Engineering,2,i5yu@uwaterloo.ca
 20834134,Bowen,Zhu,b55zhu@uwaterloo.ca,Male,Mathematics,2,susas@uwaterloo.ca
 20891045,Brandon,Constantin,B2consta@uwaterloo.ca,Male,Engineering,,
-21085250,Brandon ,Kong,b2kong@uwaterloo.ca,Male,Engineering,4,j2447zha@uwaterloo.ca
+21085250,Brandon,Kong,b2kong@uwaterloo.ca,Male,Engineering,4,j2447zha@uwaterloo.ca
 21091615,Brayden,Yeo,byeo@uwaterloo.ca,Male,Science,1,r5fu@uwaterloo.ca
 20966630,Brayson,Cancel,bcancel@uwaterloo.ca,Male,Science,3,i5yu@uwaterloo.ca
 21065628,Brenna,Capper,bcapper@uwaterloo.ca,,Health,,
 20987553,Brian,Le,b3le@uwaterloo.ca,Male,Science,4,d78wong@uwaterloo.ca
 21097871,Brian,Zhang,brian.w.zhang@gmail.com,Male,Engineering,3,w27tian@uwaterloo.ca
-20855897,Brian ,Kui,Bkui@uwaterloo.ca,Male,Arts,4,c249zhou@uwaterloo.ca
+20855897,Brian,Kui,Bkui@uwaterloo.ca,Male,Arts,4,c249zhou@uwaterloo.ca
 21002769,Britney,Ly,B2ly@uwaterloo.ca,Female,Arts,2,j5shang@uwaterloo.ca
 21052331,Bruce,Tan,B5tan@uwaterloo.ca,Male,Science,3,ericwei642@gmail.com
 21005737,Bryan,Jiang,b3jiang@uwaterloo.ca,Male,Mathematics,3,t389liu@uwaterloo.ca
@@ -169,25 +169,25 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20828243,Bryan,Yam,b2yam@uwaterloo.ca,Male,Engineering,3,susas@uwaterloo.ca
 20894363,Bryson,Lee,b233lee@uwaterloo.ca,Male,Arts,,
 20956176,Caden,Chan,c289chan@uwaterloo.ca,Male,Arts,4,d22cai@uwaterloo.ca
-21025238,Caden ,Feng,cdnfng@gmail.com,,Health,4,i5yu@uwaterloo.ca
-21010836,Caitlyn ,Lee,cmlee@uwaterloo.ca,Female,Health,,
-20881215,Calder White,White,calderwhite1@gmail.com,Male,Mathematics,3,nwxie@uwaterloo.ca
+21025238,Caden,Feng,cdnfng@gmail.com,,Health,4,i5yu@uwaterloo.ca
+21010836,Caitlyn,Lee,cmlee@uwaterloo.ca,Female,Health,,
+20881215,Calder,White,calderwhite1@gmail.com,Male,Mathematics,3,nwxie@uwaterloo.ca
 20822372,Calvin,Lin,c237lin@uwaterloo.ca,Male,Mathematics,,
 20880444,Calvin,Liu,c593liu@uwaterloo.ca,,Engineering,3,d22cai@uwaterloo.ca
 20899433,Calvin,Zhao,c99zhao@uwaterloo.ca,Male,Engineering,,
 21058783,Camden,da Silva,cdasilva@uwaterloo.ca,,Engineering,,
 20820478,Cameron,Kinsella,ckinsella@uwaterloo.ca,Male,Engineering,1,cmlee@uwaterloo.ca
-20944647,Camila ,Penaloza-Anzola,cpenaloz@uwaterloo.ca,Female,Science,,
+20944647,Camila,Penaloza-Anzola,cpenaloz@uwaterloo.ca,Female,Science,,
 20885667,Campbell,Wang,campbell.wang@uwaterloo.ca,Male,Engineering,2,c249zhou@uwaterloo.ca
 20897322,Carita,Chung,cy4chung@uwaterloo.ca,,Engineering,,
 20876829,Carl,Wong,c269wong@uwaterloo.ca,Male,Engineering,3,d22cai@uwaterloo.ca
-20953937,Carmen Tam,Tam,c35tam@uwaterloo.ca,"questioning ???? aaaaaaah but for paperwork intents and purposes, female.",Science,2,t389liu@uwaterloo.ca
+20953937,Carmen,Tam,c35tam@uwaterloo.ca,"questioning ???? aaaaaaah but for paperwork intents and purposes, female.",Science,2,t389liu@uwaterloo.ca
 20841787,Carol,Huang,z392huan@uwaterloo.ca,Female,Science,1,s5feng@uwaterloo.ca
 21018886,Carolyn,Zhang,c63zhang@uwaterloo.ca,,Mathematics,3,d22cai@uwaterloo.ca
 21065108,Carrie,Jiang,c7jiang@uwaterloo.ca,,Engineering,,
 20950710,Cassidy,Hemphill,chemphil@uwaterloo.ca,,Engineering,,
 20784693,Catherine,Deng,c32deng@uwaterloo.ca,,Science,2,a229liu@uwaterloo.ca
-20832271,Catherine Nhi,Hoang,n8hoang@uwaterloo.ca,Female,Arts,,
+20832271,Catherine,Hoang,n8hoang@uwaterloo.ca,Female,Arts,,
 20900076,Cathy,Liu,c627liu@uwaterloo.ca ,Female,Arts,1,nwxie@uwaterloo.ca
 21069534,Cecilia,Chan,sschan@uwaterloo.ca,,Health,,
 20936992,Cecilia,Wang,p264wang@uwaterloo.ca,,Mathematics,,
@@ -200,16 +200,16 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20895672,Charles,Liu,c597liu@uwaterloo.ca,Male,Engineering,3,a229liu@uwaterloo.ca
 21072026,Charlie,Li,c94li@uwaterloo.ca,Male,Mathematics,4,e48huang@uwaterloo.ca
 20829147,Charlie,Zheng,zqzheng@uwaterloo.ca,Male,Engineering,3,susas@uwaterloo.ca
-21066917,Charlize ,Hickey ,Chickey@uwaterloo.ca,,Arts,,
+21066917,Charlize,Hickey ,Chickey@uwaterloo.ca,,Arts,,
 20959264,Chau,Pham,c23pham@uwaterloo.ca,Female,Science,1,d78wong@uwaterloo.ca
 21081128,Chavi,Karunagoda ,dkarunag@uwaterloo.ca,Female,Health,,
 20852602,Chealsie,Bains,4chealsie.9@gmail.com,Female,Engineering,1,d22cai@uwaterloo.ca
 20973159,Chelsea,Chen,c557chen@uwaterloo.ca,Female,Engineering,1,c249zhou@uwaterloo.ca
 20814270,Chelsea,Huang,cx3huang@uwaterloo.ca,Female,Engineering,2,kqguo@uwaterloo.ca
 21027926,Chelsea,Ma,c25ma@uwaterloo.ca,,Science,,
-20901190,Chelsea ,Hettigama ,cthettig@uwaterloo.ca ,,Arts,2,d22cai@uwaterloo.ca
+20901190,Chelsea,Hettigama ,cthettig@uwaterloo.ca ,,Arts,2,d22cai@uwaterloo.ca
 21025426,Cheryl,Chen,c54chen@uwaterloo.ca,Female,Environment,2,j5shang@uwaterloo.ca
-21111634,Chin Yi,Tiong,cytiong@uwaterloo.ca,,Arts,1,t389liu@uwaterloo.ca
+21111634,Chin,Tiong,cytiong@uwaterloo.ca,,Arts,1,t389liu@uwaterloo.ca
 20947539,Chloe,Cheng,cc4cheng@uwaterloo.ca,Female,Arts,,
 20851529,Chris,Bungay,cbungay@uwaterloo.ca,Male,Science,4,d78wong@uwaterloo.ca
 20903667,Christen,Wong,c276wong@uwaterloo.ca,Male,Engineering,4,d22cai@uwaterloo.ca
@@ -224,10 +224,10 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21001384,Cindy,Tang,c6tang@uwaterloo.ca ,,Health,2,t389liu@uwaterloo.ca
 20839813,Claire,Reeves,c2reeves@uwaterloo.ca,Female,Engineering,1,j2447zha@uwaterloo.ca
 20783577,Claire,Weaver,cejweave@uwaterloo.ca,,Science,,
-20943174,Clara Kyumin,Kim,ck3kim@uwaterloo.ca,Female,Engineering,2,r5fu@uwaterloo.ca
-20846106,Clara Putri Ong,Ong,cp2ong@uwaterloo.ca,Female,Mathematics,1,i5yu@uwaterloo.ca
+20943174,Clara,Kim,ck3kim@uwaterloo.ca,Female,Engineering,2,r5fu@uwaterloo.ca
+20846106,Clara,Ong,cp2ong@uwaterloo.ca,Female,Mathematics,1,i5yu@uwaterloo.ca
 20969480,Clement,Chow,cnchow@uwaterloo.ca,Male,Mathematics,1,i5yu@uwaterloo.ca
-21080422,Clement Zhou,Zhou,c249zhou@uwaterloo.ca,Male,Science,4,shjoo@uwaterloo.ca
+21080422,Clement,Zhou,c249zhou@uwaterloo.ca,Male,Science,4,shjoo@uwaterloo.ca
 21111125,Clotilde,Laval,cdrlaval@uwaterloo.ca,Female,Mathematics,,
 20888573,Cloudy,Lo,hflo@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
 20891162,Coby,Symss,Csymss@uwaterloo.ca,,Science,1,d22cai@uwaterloo.ca
@@ -241,7 +241,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21057990,Connor,Houvardas,cmdhouva@uwaterloo.ca,,Environment,3,i5yu@uwaterloo.ca
 20891888,Connor,Mak,c8mak@uwaterloo.ca,,Arts,4,i5yu@uwaterloo.ca
 20908136,Curtis,Au,crau@uwaterloo.ca,Male,Science,2,d78wong@uwaterloo.ca
-21021889,Curtis Sinopoli,Sinopoli,curtis.sinopoli@uwaterloo.ca,Male,Engineering,3,t389liu@uwaterloo.ca
+21021889,Curtis,Sinopoli,curtis.sinopoli@uwaterloo.ca,Male,Engineering,3,t389liu@uwaterloo.ca
 21003899,Daniel,Chen,dychen@uwaterloo.ca,Male,Engineering,4,j2447zha@uwaterloo.ca
 21022662,Daniel,Chen,D9chen@uwaterloo.ca,Male,Mathematics,,
 20955129,Daniel,Dauz,ddauz@uwaterloo.ca,Male,Health,4,ericwei642@gmail.com
@@ -258,7 +258,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20654678,Daniel,Wang,d274wang@uwaterloo.ca,Male,Arts,4,r225zhu@uwaterloo.ca
 20884951,Daniel,Ye,dzyye@uwaterloo.ca,,Engineering,4,nysricha@uwaterloo.ca
 20830835,Daniel,Zybine,dzybine@uwaterloo.ca,Male,Engineering,3,cmlee@uwaterloo.ca
-20961256,Daniel Sun,Sun,d52sun@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
+20961256,Daniel,Sun,d52sun@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
 21020517,Darius,Rudaitis,dmrudait@uwaterloo.ca,Male,Engineering,,
 21034515,Darley,Dau,Ddau@uwaterloo.ca,Female,Arts,1,d22cai@uwaterloo.ca
 21087026,Darren,Chiang ,Dscchian@uwaterloo.ca,Male,Science,4,r225zhu@uwaterloo.ca
@@ -271,15 +271,15 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20943819,David,Wong,d78wong@uwaterloo.ca,Male,Mathematics,4,h2hsieh@uwaterloo.ca
 20947942,David,Wu,d264wu@gmail.com,Male,Engineering,2,
 20966208,David,Xu,d98xu@uwaterloo.ca,Male,Mathematics,4,d78wong@uwaterloo.ca
-20836844,David ,Feldt,dsfeldt@gmail.com,,Engineering,2,d22cai@uwaterloo.ca
-21059784,David ,Hu-Liu,dhuliu@uwaterloo.ca,,Mathematics,4,shjoo@uwaterloo.ca
-20759566,David ,Jimenez ,dajimene@uwaterloo.ca,Male,Engineering,,
-20964967,David ,Szczecina,dszczeci@uwaterloo.ca,Male,Engineering,3,a229liu@uwaterloo.ca
+20836844,David,Feldt,dsfeldt@gmail.com,,Engineering,2,d22cai@uwaterloo.ca
+21059784,David,Hu-Liu,dhuliu@uwaterloo.ca,,Mathematics,4,shjoo@uwaterloo.ca
+20759566,David,Jimenez ,dajimene@uwaterloo.ca,Male,Engineering,,
+20964967,David,Szczecina,dszczeci@uwaterloo.ca,Male,Engineering,3,a229liu@uwaterloo.ca
 20899574,Dean,Wang,z2597wan@uwaterloo.ca,Male,Science,4,shjoo@uwaterloo.ca
 20901259,Delaney,Garlow,Dlgarlow@uwaterloo.ca,Female,Health,3,h2hsieh@uwaterloo.ca
 20953015,Denis,Fu,d35fu@uwaterloo.ca,Male,Arts,2,d22cai@uwaterloo.ca
 20830108,Denis,Huseljic,d2huselj@uwaterloo.ca,Male,Science,3,d78wong@uwaterloo.ca
-20897986,Dennis Li,Li,d385li@uwaterloo.ca,Male,Engineering,2,t389liu@uwaterloo.ca
+20897986,Dennis,Li,d385li@uwaterloo.ca,Male,Engineering,2,t389liu@uwaterloo.ca
 20947911,Dev,Narula,d3narula@uwaterloo.ca,Male,Mathematics,1,h2hsieh@uwaterloo.ca
 20903113,Dev,Patel,da33pate@uwaterlo.ca,,Engineering,,
 21053232,Deven,Kaler,dkaler@uwaterloo.ca,,Mathematics,,
@@ -302,7 +302,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20942366,Dylan,Li,dylan.li@uwaterloo.ca,Male,Mathematics,1,c249zhou@uwaterloo.ca
 20890315,Dylan,Xiao,d29xiao@uwaterloo.ca,Male,Mathematics,3,r225zhu@uwaterloo.ca
 21013998,Dylan,Yeung,dl3yeung@uwaterloo.ca,Male,Engineering,2,d78wong@uwaterloo.ca
-21006397,Earl ,Mondaya,ekbmonda@uwaterloo.ca,Male,Environment,3,t389liu@uwaterloo.ca
+21006397,Earl,Mondaya,ekbmonda@uwaterloo.ca,Male,Environment,3,t389liu@uwaterloo.ca
 20931832,Eddy,Zhang,e82zhang@uwaterloo.ca,Male,Engineering,1,j2447zha@uwaterloo.ca
 20888972,Edmund,Chow,e27chow@uwaterloo.ca,Male,Engineering,1,i5yu@uwaterloo.ca
 20928439,Edwin,Giang,egiang@uwaterloo.ca,Male,Engineering,3,susas@uwaterloo.ca
@@ -322,7 +322,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20942333,Emily,Rose,erose@uwaterloo.ca,Female,Engineering,3,ericwei642@gmail.com
 20876302,Emily,Tran,E49tran@uwaterloo.ca,,Health,1,i5yu@uwaterloo.ca
 20813274,Emily,Yang,e29yang@uwaterloo.ca,Female,Engineering,3,susas@uwaterloo.ca
-20839812,Emily ,Reeves,ereeves@uwaterloo.ca,Female,Engineering,1,d78wong@uwaterloo.ca
+20839812,Emily,Reeves,ereeves@uwaterloo.ca,Female,Engineering,1,d78wong@uwaterloo.ca
 21002462,Emma,Marcelo,eamarcel@uwaterloo.ca,Female,Health,4,shjoo@uwaterloo.ca
 20956315,Eniola,Momson,eodmomso@uwaterloo.ca,,Science,1,cmlee@uwaterloo.ca
 21064646,Eno,Liu,e233liu@uwaterloo.ca,Male,Mathematics,1,d22cai@uwaterloo.ca
@@ -339,9 +339,9 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20851786,Eric,Vu,e2vu@uwaterloo.ca,Male,Science,4,r225zhu@uwaterloo.ca
 21064828,Eric,Wang,e257wang@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
 20899910,eric,wei,ericwei642@gmail.com,Male,Mathematics,4,i5yu@uwaterloo.ca
-21063062,Eric ,Chen,e236chen@uwaterloo.ca,Male,Health,4,i5yu@uwaterloo.ca
+21063062,Eric,Chen,e236chen@uwaterloo.ca,Male,Health,4,i5yu@uwaterloo.ca
 20833419,Erin,Hart,e4hart@uwaterloo.ca,Female,Engineering,4,i5yu@uwaterloo.ca
-20873807,Erin ,Lee,e234lee@uwaterloo.ca,Female,Engineering,3,d22cai@uwaterloo.ca
+20873807,Erin,Lee,e234lee@uwaterloo.ca,Female,Engineering,3,d22cai@uwaterloo.ca
 20939953,Ernest,Tang,e42tang@uwaterloo.ca,Male,Engineering,3,o2fang@uwaterloo.ca
 20997955,Eshaan,Mehta,e3mehta@uwaterloo.ca,Male,Engineering,2,d78wong@uwaterloo.ca
 21018585,Esther,Lui,ecylui@uwaterloo.ca,Female,Science,2,susas@uwaterloo.ca
@@ -351,7 +351,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20913003,Ethan,Sue,esue@uwaterloo.ca,Male,Arts,,
 20994209,Ethan,Woo,ecpwoo@uwaterloo.ca,Male,Engineering,,
 21020827,Ethan,Zheng,ey3zheng@uwaterloo.ca,Male,Engineering,,
-21037610,Ethan ,Slogar ,eslofi1337@gmail.com,Male,Arts,1,a229liu@uwaterloo.ca
+21037610,Ethan,Slogar ,eslofi1337@gmail.com,Male,Arts,1,a229liu@uwaterloo.ca
 20822014,Eugenie,Hui,e2hui@uwaterloo.ca,Female,Health,3,j2447zha@uwaterloo.ca
 20961338,Evaline,Tsai,etsai@uwaterloo.ca,Female,Mathematics,1,j5shang@uwaterloo.ca
 20909293,Evan,Cummings,edcummin@uwaterloo.ca,Male,Health,,
@@ -361,15 +361,15 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21061836,Evan,Nguyen,e33nguye@uwaterloo.ca,Male,Mathematics,1,d22cai@uwaterloo.ca
 20946847,Eve,Moua,eamoua@uwaterloo.ca,Female,Health,4,nwxie@uwaterloo.ca
 21007924,Evelina,Zheng,ey2zheng@uwaterloo.ca,Female,Mathematics,1,s5feng@uwaterloo.ca
-21003486,Evelyn ,Fung,ejfung@uwaterloo.ca,Female,Science,1,shjoo@uwaterloo.ca
+21003486,Evelyn,Fung,ejfung@uwaterloo.ca,Female,Science,1,shjoo@uwaterloo.ca
 20941447,Fahim,Ahmed,f92ahmed@uwaterloo.ca,Male,Mathematics,,
 21085418,Fahmi,Omer,f3omer@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
 20907897,Faizan,Lalva,flalva@uwaterloo.ca,,Health,,
 20954431,Farzad,Rahman,f46rahma@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
 21008066,Fatima,Varela,fvarelav@uwaterloo.ca,,Engineering,,
 20896687,Felix,Liao,f4liao@uwaterloo.ca,Male,Mathematics,3,d22cai@uwaterloo.ca
-20956000,Feng Xiong,Xiong,f4xiong@uwaterloo.ca,Male,Mathematics,2,a229liu@uwaterloo.ca
-20955307,Filip Milidrag,Milidrag,fmilidra@uwaterloo.ca,Male,Mathematics,2,a229liu@uwaterloo.ca
+20956000,Feng,Xiong,f4xiong@uwaterloo.ca,Male,Mathematics,2,a229liu@uwaterloo.ca
+20955307,Filip,Milidrag,fmilidra@uwaterloo.ca,Male,Mathematics,2,a229liu@uwaterloo.ca
 20879024,Fion,Lin,f33lin@uwaterloo.ca,Female,Engineering,2,o2fang@uwaterloo.ca
 21065670,Fiona,Chun,f2chun@uwaterloo.ca,Female,Environment,1,r5fu@uwaterloo.ca
 20944538,Fiona,Zhu,f43zhu@uwaterloo.ca,Female,Health,1,j2447zha@uwaterloo.ca
@@ -393,9 +393,9 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20759768,Grigorii,Bulava,grigoriibulava@gmail.com,,Mathematics,1,i5yu@uwaterloo.ca
 21017971,Gunhee,Song,g4song@uwaterloo.ca,,Science,2,i5yu@uwaterloo.ca
 21058233,Hadi,Khan,h32khan@uwaterloo.ca,Male,Engineering,2,c249zhou@uwaterloo.ca
-20901877,Hadi Al Hakeem,Al Hakeem,h2alhake@uwaterloo.ca,Male,Mathematics,4,susas@uwaterloo.ca
+20901877,Hadi,Al Hakeem,h2alhake@uwaterloo.ca,Male,Mathematics,4,susas@uwaterloo.ca
 20852476,Hana,Davis,h7davis@uwaterloo.ca,,Engineering,,
-21111596,Hanh An,Nguyen,hanguyen@uwaterloo.ca,,Mathematics,,
+21111596,Hanh,Nguyen,hanguyen@uwaterloo.ca,,Mathematics,,
 20879686,Hank,Yang,c356yang@uwaterloo.ca,Male,Mathematics,2,ericwei642@gmail.com
 37772963,Hanxi,Wang,h42wang@uwaterloo.ca,Female,Engineering,1,d22cai@uwaterloo.ca
 21076935,Haoyang,Wang,h255wang@uwaterloo.ca,,Engineering,4,shjoo@uwaterloo.ca
@@ -413,8 +413,8 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20890816,Henry,Guo,h223guo@uwaterloo.ca,Male,Mathematics,3,d22cai@uwaterloo.ca
 21057005,Henry,Ho,h6ho@uwaterloo.ca,Male,Engineering,3,d78wong@uwaterloo.ca
 20958844,Henry,Nguyen,H99nguye@uwaterloo.ca,Male,Mathematics,3,d22cai@uwaterloo.ca
-20777619,Herbert (Ben) Voss,Voss,hhbvoss@uwaterloo.ca,Male,Science,,
-20890098,Hillary ,Huang,H352huan@uwaterloo.ca,Female,Environment,2,a229liu@uwaterloo.ca
+20777619,Herbert,Voss,hhbvoss@uwaterloo.ca,Male,Science,,
+20890098,Hillary,Huang,H352huan@uwaterloo.ca,Female,Environment,2,a229liu@uwaterloo.ca
 20845574,Hojun,Choi,h66choi@uwaterloo.ca,Male,Engineering,2,c249zhou@uwaterloo.ca
 20763668,Horace,Looi,hilooi@uwaterloo.ca,,Engineering,3,a226yang@uwaterloo.ca 
 21015604,Hugo,Quan,h2quan@uwaterloo.ca,Male,Engineering,2,o2fang@uwaterloo.ca
@@ -433,7 +433,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20932001,Ivan,He,I4he@uwaterloo.ca,Male,Arts,4,nwxie@uwaterloo.ca
 20931267,Ivan,Hu,ivanhu04@gmail.com,Male,Mathematics,,
 20938280,Ivan,Lim,i2lim@uwaterloo.ca,,Engineering,4,nysricha@uwaterloo.ca
-20890118,Ivan ,he,ihe@uwaterloo.ca,Male,Arts,4,ericwei642@gmail.com
+20890118,Ivan,he,ihe@uwaterloo.ca,Male,Arts,4,ericwei642@gmail.com
 21028743,Ivleen,Gill ,ik5gill@uwaterloo.ca,Female,Health,,
 20893644,Ivy,Yu,i5yu@uwaterloo.ca,Female,Mathematics,4,nysricha@uwaterloo.ca
 20872516,Jacelyn,Wu,j536wu@uwaterloo.ca,,Arts,2,r225zhu@uwaterloo.ca
@@ -446,12 +446,12 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20903057,Jacob,Tam,jacobtam2002@gmail.com,Male,Mathematics,4,susas@uwaterloo.ca
 20831307,Jacqueline,Ko,j34ko@uwaterloo.ca,Female,Engineering,3,t389liu@uwaterloo.ca
 20882915,Jacqueline,Ngan,j3ngan@gmail.com,,Health,2,d22cai@uwaterloo.ca
-20940622,Jacqueline ,Lai,J69lai@gmail.com,Female,Health,,
+20940622,Jacqueline,Lai,J69lai@gmail.com,Female,Health,,
 20960407,Jaden,Chan,j359chan@uwaterloo.ca,Male,Health,4,i5yu@uwaterloo.ca
 20840571,Jagan,Sahu,jsahu@uwaterloo.ca,Male,Mathematics,,
 20955213,Jake,Chua,j7chua@uwaterloo.ca,Male,Engineering,1,d22cai@uwaterloo.ca
 20905813,Jake,Masterson,j3master@uwaterloo.ca,Male,Mathematics,4,d78wong@uwaterloo.ca
-20967326,Jake Vanderweyst,Vanderweyst,j62vande@uwaterloo.ca,Male,Arts,2,a229liu@uwaterloo.ca
+20967326,Jake,Vanderweyst,j62vande@uwaterloo.ca,Male,Arts,2,a229liu@uwaterloo.ca
 20756243,James,Bates,jabates@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
 21089973,James,Gasgas,jgasgas@uwaterloo.ca,,Environment,,
 20952259,James,Li,j2668li@uwaterloo.ca,Male,Engineering,4,o2fang@uwaterloo.ca
@@ -469,8 +469,8 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20945359,Jason,Tang,j293tang@uwaterloo.ca,Male,Mathematics,3,d78wong@uwaterloo.ca
 21081952,Jason,Toft,j2toft@uwaterloo.ca,Male,Engineering,4,kqguo@uwaterloo.ca
 20775635,Jason,Wang,jason.wang1@uwaterloo.ca,Male,Engineering,2,susas@uwaterloo.ca
-20941405,Jason Duan,Duan,j45duan@uwaterloo.ca,Male,Engineering,,
-21106514,Jason Pham,Pham,j8pham@uwaterloo.ca,Male,Arts,2,s5feng@uwaterloo.ca
+20941405,Jason,Duan,j45duan@uwaterloo.ca,Male,Engineering,,
+21106514,Jason,Pham,j8pham@uwaterloo.ca,Male,Arts,2,s5feng@uwaterloo.ca
 21076854,Jasper,Wang,j462wang@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
 21056991,Javier,Deng,jdengxu@uwaterloo.ca,Male,Mathematics,2,o2fang@uwaterloo.ca
 21101461,Jay,lee,j442lee@uwaterloo.ca,Male,Arts,2,d22cai@uwaterloo.ca
@@ -478,7 +478,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20957697,Jayden,Ting,Jaydenting11@gmail.com,Male,Arts,1,d78wong@uwaterloo.ca
 21024436,Jaydon,Wang,Wang.jaydon1@gmail.com,,Arts,1,t389liu@uwaterloo.ca
 20938840,JC,Detubio,jcdetubi@uwaterloo.ca,,Arts,,
-20970151,Jed Yvan,Gasmen,ycgasmen@uwaterloo.ca,Male,Science,,
+20970151,Jed,Gasmen,ycgasmen@uwaterloo.ca,Male,Science,,
 20997285,Jeff,Liu,J73liu@uwaterloo.ca ,,Mathematics,1,t389liu@uwaterloo.ca
 20842871,Jeffery,Li,jeffery.li316@gmail.com,Male,Mathematics,2,r5fu@uwaterloo.ca
 20723659,Jeffrey,Jiang,jj3jiang@uwaterloo.ca,Male,Science,1,r5fu@uwaterloo.ca
@@ -494,14 +494,14 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20927898,Jerome,Lu,jeromelu03@gmail.com,Male,Engineering,4,shjoo@uwaterloo.ca
 20933652,Jerry,Li,jw25li@uwaterloo.ca,Male,Mathematics,3,d78wong@uwaterloo.ca
 20761294,Jerry,Xing,j27xing@uwaterloo.ca,Male,Engineering,2,o2fang@uwaterloo.ca
-21002531,Jesse Huang,Huang,jj2huang@uwaterloo.ca,Male,Mathematics,2,i5yu@uwaterloo.ca
+21002531,Jesse,Huang,jj2huang@uwaterloo.ca,Male,Mathematics,2,i5yu@uwaterloo.ca
 21011882,Jessica,Chen,j79chen@uwaterloo.ca,Female,Mathematics,1,w27tian@uwaterloo.ca
 21015612,Jessica,Su,jessica.su@uwaterloo.ca,Female,Environment,1,w27tian@uwaterloo.ca
 20996039,Jessica,Svoboda,Jssvobod@uwaterloo.ca,Female,Engineering,3,d78wong@uwaterloo.ca
 21002561,Jessica,Zhang,jj2zhang@uwaterloo.ca,Female,Engineering,,
 21065781,Jessie,Chan,j67chan@uwaterloo.ca,,Health,2,cmlee@uwaterloo.ca
 21108017,Jessy,Meredith,jmeredit@uwaterloo.ca,,Engineering,1,t389liu@uwaterloo.ca
-20887936,Jiabin (Marco),Li,M669li@uwaterloo.ca,Male,Engineering,2,a229liu@uwaterloo.ca
+20887936,Jiabin,Li,M669li@uwaterloo.ca,Male,Engineering,2,a229liu@uwaterloo.ca
 20940860,Jim,Ji,jim.ji@uwaterloo.ca,Male,Engineering,,
 20844102,Jim,Polong,jpolong@uwaterloo.ca,Male,Arts,4,o2fang@uwaterloo.ca
 20895688,Jimmy,Zhan,j36zhan@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
@@ -510,7 +510,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20995045,Joanna,Vuong,jvuong@uwaterloo.ca,,Science,1,t389liu@uwaterloo.ca
 20895795,Joanne,Jo,j7jo@uwaterloo.ca,,Engineering,4,s65chung@uwaterloo.ca
 20965490,John,Han,j273han@uwaterloo.ca,Male,Engineering,1,d78wong@uwaterloo.ca
-20503810,John Lu,Lu,z52lu@uwaterloo.ca,Male,Engineering,1,s5feng@uwaterloo.ca
+20503810,John,Lu,z52lu@uwaterloo.ca,Male,Engineering,1,s5feng@uwaterloo.ca
 20720609,Johnathan,Clark,johnvinclark@gmail.com,Male,Mathematics,,
 20996007,Johnathan,Gu,j6gu@uwaterloo.ca,Male,Arts,3,susas@uwaterloo.ca
 21063334,Johnny,Gui,j6gui@uwaterloo.ca,Male,Mathematics,3,i5yu@uwaterloo.ca
@@ -519,7 +519,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20909327,Jonathan,Chin,j24chin@uwaterloo.ca,Male,Engineering,4,i5yu@uwaterloo.ca
 20948624,Jonathan,Rethish,jonathanrethish1@gmail.com,Male,Engineering,2,a229liu@uwaterloo.ca
 20941295,Jonathan,Xu,j584xu@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
-21028647,Jonathan ,Lee,jj22lee@uwaterloo.ca,Male,Environment,3,susas@uwaterloo.ca
+21028647,Jonathan,Lee,jj22lee@uwaterloo.ca,Male,Environment,3,susas@uwaterloo.ca
 21017372,Jonny,Cheung,jycheung@uwaterloo.ca,,Science,2,t389liu@uwaterloo.ca 
 21024077,Jonny,Lin,j49lin@uwaterloo.ca,,Arts,,
 21030477,Jordan,Thompson,je2thomp@uwaterloo.ca,Male,Engineering,4,d78wong@uwaterloo.ca
@@ -530,12 +530,12 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21023799,Joshua,Muwonge,jmuwonge@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
 20838823,Joshua,Seale,J2Seale@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
 20956618,Joshua,Yeung,j53yeung@uwaterloo.ca,Male,Mathematics,,
-20904931,Joshua Dorotheo,Dorotheo,Jdorothe@uwaterloo.ca,Male,Engineering,3,a229liu@uwaterloo.ca
+20904931,Joshua,Dorotheo,Jdorothe@uwaterloo.ca,Male,Engineering,3,a229liu@uwaterloo.ca
 20786129,Jovelle,Lock,jalock@uwaterloo.ca,Male,Engineering,,
 21014781,Joyce,Liu,j228liu@uwaterloo.ca,,Arts,,
 20928371,Judy,Yang,j636yang@uwaterloo.ca,Female,Mathematics,3,d78wong@uwaterloo.ca
 20822304,Julia,Turner,j22turne@uwaterloo.ca,Female,Engineering,1,j2447zha@uwaterloo.ca
-21102230,Julia ,Geurten ,jgeurten@uwaterloo.ca,Female,Science,4,r225zhu@uwaterloo.ca
+21102230,Julia,Geurten ,jgeurten@uwaterloo.ca,Female,Science,4,r225zhu@uwaterloo.ca
 20781954,Julian,Dong,hfdong@uwaterloo.ca,Male,Engineering,3,t389liu@uwaterloo.ca
 21083051,julien,gendron ,jmgendro@uwaterloo.ca,,Health,,
 21069306,Jun,Lee,h63lee@uwaterloo.ca,Male,Environment,1,r5fu@uwaterloo.ca
@@ -547,7 +547,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20839841,Justin,Mendes,j4mendes@uwaterloo.ca,Male,Engineering,4,d22cai@uwaterloo.ca
 20945489,Justin,Nagarajah,J2nagara@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
 20843339,Justin,Vuong,vuong.justin01@gmail.com,Male,Engineering,,
-20608868,Justin ,Shmordok,jshmordo@uwaterloo.ca,Male,Science,1,d22cai@uwaterloo.ca
+20608868,Justin,Shmordok,jshmordo@uwaterloo.ca,Male,Science,1,d22cai@uwaterloo.ca
 20998853,Jusy,Zhu,18judyzhu@gmail.com,,Arts,2,t389liu@uwaterloo.ca
 20951377,Kai,Tofflemire,Ktofflem@uwaterloo.ca,Male,Science,2,t389liu@uwaterloo.ca
 20938952,Kai,Wang,k429wang@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
@@ -559,7 +559,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20895458,Kasun,Vithanage,kkudavit@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
 21011102,Katelyn,Stermann,ksterman@uwaterloo.ca,Female,Arts,1,nwxie@uwaterloo.ca
 21083131,Katherine,Miao,k4miao@uwaterloo.ca,,Mathematics,,
-21060451,Katherine ,Liu,kkliu@uwaterloo.ca,Female,Mathematics,3,i5yu@uwaterloo.ca
+21060451,Katherine,Liu,kkliu@uwaterloo.ca,Female,Mathematics,3,i5yu@uwaterloo.ca
 21000074,Kathleen,Xiong,k2xiong@uwaterloo.ca,,Engineering,1,susas@uwaterloo.ca
 21072305,Katie,Langille,klangill@uwaterloo.ca,Female,Engineering,3,o2fang@uwaterloo.ca
 21000619,Katie,Quigley,kgquigle@uwaterloo.ca,,Engineering,,
@@ -567,7 +567,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21088704,Kay,Kim,kay.ykim12@gmail.com,,Engineering,,
 21066239,Kayla,Martindale,kmartind@uwaterloo.ca,,Mathematics,,
 20845579,Kayla,McCalla,Kmccalla@uwaterloo.ca,Female,Health,4,d22cai@uwaterloo.ca
-20816602,Keaton ,Lees,klees@uwaterloo.ca,Male,Engineering,3,t389liu@uwaterloo.ca
+20816602,Keaton,Lees,klees@uwaterloo.ca,Male,Engineering,3,t389liu@uwaterloo.ca
 21084926,Keerthan,Piratheepan,k6pirath@uwaterloo.ca,,Mathematics,,
 20892949,Keith,Lai,k34lai@uwaterloo.ca,,Engineering,3,d22cai@uwaterloo.ca
 20931793,kelly,mak,ockocmak@uwaterloo.ca,Female,Engineering,1,d22cai@uwaterloo.ca
@@ -587,11 +587,11 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20832371,Kevin,Wang,k364wang@uwaterloo.ca,Male,Mathematics,,
 21064907,Kevin,Wu,k33wu@uwaterloo.ca,Male,Mathematics,,
 20877239,Kevin,Zhang,k329zhan@uwaterloo.ca,Male,Mathematics,4,i5yu@uwaterloo.ca
-21071144,Kevin ,Choi ,k7choi@uwaterloo.ca,Male,Science,2,r5fu@uwaterloo.ca
-20952501,Kevin ,Cui ,k8cui@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
-20954701,Kevin ,Jose ,K3jose@uwaterloo.ca,Male,Engineering,3,a226yang@uwaterloo.ca
-20824499,Kevin ,Yang,K226yang@uwaterloo.ca,Male,Engineering,2,i5yu@uwaterloo.ca
-20960677,Kevin Daniel,Kevin ,k6daniel@uwaterloo.ca,Male,Mathematics,1,s5feng@uwaterloo.ca
+21071144,Kevin,Choi ,k7choi@uwaterloo.ca,Male,Science,2,r5fu@uwaterloo.ca
+20952501,Kevin,Cui ,k8cui@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
+20954701,Kevin,Jose ,K3jose@uwaterloo.ca,Male,Engineering,3,a226yang@uwaterloo.ca
+20824499,Kevin,Yang,K226yang@uwaterloo.ca,Male,Engineering,2,i5yu@uwaterloo.ca
+20960677,Kevin,Kevin ,k6daniel@uwaterloo.ca,Male,Mathematics,1,s5feng@uwaterloo.ca
 20779354,Keyan,Lin,k59lin@uwaterloo.ca,,Engineering,,
 21043703,keyan,virani,k3virani@uwaterloo.ca,,Arts,3,e48huang@uwaterloo.ca
 21102403,Khoi,Pham,km2pham@uwaterloo.ca,,Mathematics,1,shjoo@uwaterloo.ca
@@ -599,11 +599,11 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20722885,Kingson,So,kgso@uwaterloo.ca,Male,Science,,
 21087807,Kira,Kovacevic,k2kovace@uwaterloo.ca,Female,Health,4,i5yu@uwaterloo.ca
 11153817,Kirill,Petrov ,kirill.pv98@gmail.com,Male,Health,4,i5yu@uwaterloo.ca
-21060250,Koena ,Mukherjee,Kmukherj@uwaterloo.ca,Female,Science,1,w27tian@uwaterloo.ca
+21060250,Koena,Mukherjee,Kmukherj@uwaterloo.ca,Female,Science,1,w27tian@uwaterloo.ca
 20893073,Kota,Kitagawa,kotapipitan@gmail.com,,Arts,2,i5yu@uwaterloo.ca
 21088822,Krish,Patel,k464pate@uwaterloo.ca,,Arts,,
-20882289,Kristen ,Chau,k32chau@uwaterloo.ca,Female,Environment,2,c249zhou@uwaterloo.ca
-21031473,Kristina Isabelle,Cortez,kimcorte@uwaterloo.ca,Female,Engineering,2,o2fang@uwaterloo.ca
+20882289,Kristen,Chau,k32chau@uwaterloo.ca,Female,Environment,2,c249zhou@uwaterloo.ca
+21031473,Kristina,Cortez,kimcorte@uwaterloo.ca,Female,Engineering,2,o2fang@uwaterloo.ca
 20842760,Kyle,Seto,kyleseto01@gmail.com,Male,Mathematics,2,susas@uwaterloo.ca
 20952096,Kyleigh,Sacbibit,ksacbibi@uwaterloo.ca,Female,Engineering,,
 21073072,Lauren,Kwong,l6kwong@uwaterloo.ca,,Engineering,3,susas@uwaterloo.ca
@@ -611,7 +611,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20998064,Lauren,Matheson,lamathes@uwaterloo.ca,Female,Engineering,4,d78wong@uwaterloo.ca
 20883032,Lauryn,Chew,Lchew@uwaterloo.ca,Female,Science,4,r225zhu@uwaterloo.ca
 20933998,Lavan,Sumanan,lasumana@uwaterloo.ca,,Engineering,,
-21094177,Layson ,Lam,l23lam@uwaterloo.ca,Male,Science,4,r225zhu@uwaterloo.ca
+21094177,Layson,Lam,l23lam@uwaterloo.ca,Male,Science,4,r225zhu@uwaterloo.ca
 21031227,Leanne,Jin,l5jin@uwaterloo.ca,Female,Mathematics,1,ericwei642@gmail.com
 20839938,Leiann,Shen,l67shen@uwaterloo.ca,Female,Health,4,r225zhu@uwaterloo.ca
 20889974,Leighton,Friesen,lfriesen@uwaterloo.ca,,Mathematics,4,i5yu@uwaterloo.ca
@@ -623,7 +623,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21076290,Liann,MacNeil,l4macnei@uwaterloo.ca,Female,Environment,2,d22cai@uwaterloo.ca
 21084040,Li-Hsin,Chen,l226chen@uwaterloo.ca,Male,Engineering,4,cmlee@uwaterloo.ca
 20941034,Lillian,Corkill,lcorkill@uwaterloo.ca,Female,Health,4,i5yu@uwaterloo.ca
-21069185,Lin Xin,Liu,lx3liu@uwaterloo.ca,Female,Mathematics,2,j5shang@uwaterloo.ca
+21069185,Lin,Liu,lx3liu@uwaterloo.ca,Female,Mathematics,2,j5shang@uwaterloo.ca
 20884690,Lindsey,Shivers,lshivers@uwaterloo.ca,Female,Science,2,d22cai@uwaterloo.ca
 20832494,Linna,Luo,l42luo@uwaterloo.ca,Female,Mathematics,2,r225zhu@uwaterloo.ca
 20995971,Logan,Arbouche-Currie,lsarbouc@uwaterloo.ca,Male,Engineering,,
@@ -644,7 +644,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20959262,Madison,Liang,m39liang@uwaterloo.ca,Female,Mathematics,2,t389liu@uwaterloo.ca
 20949971,Maheer,Murshed,mmmurshe@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
 20886827,Mahir,Mir,mahirmir1@gmail.com,Male,Engineering,1,shjoo@uwaterloo.ca
-20844899,Mahmoud aka oudy,Noweir,mahmoudeldossoky47@gmail.com,Male,Health,1,j2447zha@uwaterloo.ca
+20844899,Mahmoud,Noweir,mahmoudeldossoky47@gmail.com,Male,Health,1,j2447zha@uwaterloo.ca
 21008523,Maithily,Kadam,m2kadam@uwaterloo.ca,,Engineering,,
 20964472,Makayla,Kraulis,mkraulis@uwaterloo.ca,Female,Arts,4,susas@uwaterloo.ca
 20905065,Malavan,Kathiramalai,m2kathir@uwaterloo.ca,,Engineering,1,i5yu@uwaterloo.ca
@@ -673,7 +673,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20878387,Matthew,Sekirin,msekirin@uwaterloo.ca,Male,Mathematics,3,nwxie@uwaterloo.ca
 20828868,matthew,tam,m35tam@uwaterloo.ca,Male,Mathematics,2,t389liu@uwaterloo.ca
 20852379,Matthew,Wang,matthew.wang@uwaterloo.ca,,Mathematics,2,shjoo@uwaterloo.ca
-20838108,Matthew ,Erdelsky ,merdelsk@uwaterloo.ca,Male,Science,3,d78wong@uwaterloo.ca
+20838108,Matthew,Erdelsky ,merdelsk@uwaterloo.ca,Male,Science,3,d78wong@uwaterloo.ca
 21026063,Matthias,Law,mtflaw@uwaterloo.ca,Male,Arts,3,w27tian@uwaterloo.ca
 20897434,Max,Chu,m36chu@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
 21071284,Max,Hua,m23hua@uwaterloo.ca,Male,Mathematics,2,e48huang@uwaterloo.ca
@@ -686,7 +686,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20656357,Meagan,Yerxa,mayerxa@uwaterloo.ca,Female,Engineering,,
 20899482,Megan,Chu,Mhhchu@uwaterloo.ca,,Health,1,i5yu@uwaterloo.ca
 20866876,Megan,Tang,m68tang@uwaterloo.ca,Female,Health,1,d78wong@uwaterloo.ca
-21069622,Mehdi ,Aghakishiyev ,agakisiyev.mehdi@gmail.com,Male,Mathematics,2,o2fang@uwaterloo.ca
+21069622,Mehdi,Aghakishiyev ,agakisiyev.mehdi@gmail.com,Male,Mathematics,2,o2fang@uwaterloo.ca
 21113622,Mehmet,Pelit,mapelit@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
 20977785,Mia,Enns,m3enns@uwaterloo.ca,Female,Mathematics,3,d78wong@uwaterloo.ca
 20953749,Mia,Isakovic,m2isakov@uwaterloo.ca,Female,Mathematics,1,w27tian@uwaterloo.ca
@@ -695,12 +695,12 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21078167,Michael,Whiteman,mjwhitem@uwaterloo.ca,Male,Engineering,4,d78wong@uwaterloo.ca
 20885687,Michael,Zheng,qx2zheng@uwaterloo.ca,,Mathematics,,
 20989297,Michael,Zhu,m7zhu@uwaterloo.ca,Male,Engineering,1,d22cai@uwaterloo.ca
-20940087,Michael Qian,Qian,m8qian@uwaterloo.ca,Male,Mathematics,4,nwxie@uwaterloo.ca
+20940087,Michael,Qian,m8qian@uwaterloo.ca,Male,Mathematics,4,nwxie@uwaterloo.ca
 21065058,Michelle,Ko,m3ko@uwaterloo.ca,,Engineering,1,susas@uwaterloo.ca
 20935201,Michelle,Kwon,michelle14k@gmail.com,Female,Science,1,d78wong@uwaterloo.ca
 20939957,Mike,Kim,m356kim@uwaterloo.ca,Male,Engineering,,
 21087475,Mincy,Yang,m299yang@uwaterloo.ca,Female,Mathematics,2,j5shang@uwaterloo.ca
-20898006,Ming Chen,Chen,m424chen@uwaterloo.ca,Male,Mathematics,,
+20898006,Ming,Chen,m424chen@uwaterloo.ca,Male,Mathematics,,
 20842281,Mingmei,Huang,m86huang@uwaterloo.ca,Female,Mathematics,1,i5yu@uwaterloo.ca
 21020632,Minnie,Chan,mmh2chan@uwaterloo.ca,Female,Science,1,d78wong@uwaterloo.ca
 20941166,Minyoung,Han,m57han@uwaterloo.ca,Male,Engineering,3,a229liu@uwaterloo.ca
@@ -709,8 +709,8 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20897312,Molly,Dobrik,Mjzddobr@uwaterloo.ca,Female,Science,2,d22cai@uwaterloo.ca
 21012536,Momina,Butt,Mbutt@uwaterloo.ca,Female,Mathematics,1,w27tian@uwaterloo.ca
 20897446,Moses,Nicolass,mjnicola@uwaterloo.ca,Male,Science,3,h2hsieh@uwaterloo.ca
-20880910,Muhammad Bilal,Khan,mb23khan@uwaterloo.ca,Male,Mathematics,1,d22cai@uwaterloo.ca
-21090528,Mustafa Deniz,Kircar,mdkircar@uwaterloo.ca,Male,Mathematics,3,c249zhou@uwaterloo.ca
+20880910,Muhammad,Khan,mb23khan@uwaterloo.ca,Male,Mathematics,1,d22cai@uwaterloo.ca
+21090528,Mustafa,Kircar,mdkircar@uwaterloo.ca,Male,Mathematics,3,c249zhou@uwaterloo.ca
 21112563,Mykhailo,Briazkalo,mbriazka@uwaterloo.ca,Male,Mathematics,,
 21102560,Myles,Del Rosario ,m4delros@uwaterloo.ca,,Arts,4,d78wong@uwaterloo.ca
 20889940,Namu,Kim,namukim25@gmail.com,Female,Arts,3,susas@uwaterloo.ca
@@ -722,7 +722,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21019048,Nathan,Richards,nysricha@uwaterloo.ca,Male,Arts,4,r225zhu@uwaterloo.ca
 20904914,Nathan,Tong,n3tong@uwaterloo.ca,Male,Environment,2,d22cai@uwaterloo.ca
 20900465,Nathan,Xie,nwxie@uwaterloo.ca,,Engineering,,
-21007816,Nathan ,Ha ,nmha@uwaterloo.com,Male,Arts,4,susas@uwaterloo.ca
+21007816,Nathan,Ha ,nmha@uwaterloo.com,Male,Arts,4,susas@uwaterloo.ca
 20995674,Nathaniel,Li,ng2li@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
 21081171,Navid,Pahlwan,npahlwan@uwaterloo.ca,Male,Mathematics,4,d22cai@uwaterloo.ca
 20963137,Neel,Nair,n23nair@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
@@ -732,7 +732,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20963786,Nicholas,Hamann,nhamann@uwaterloo.ca,Male,Mathematics,2,shjoo@uwaterloo.ca
 21094733,Nicholas,Lo,n9lo@uwaterloo.ca,Male,Arts,3,a229liu@uwaterloo.ca
 20761205,Nicholas,Paquin,napaquin@uwaterloo.ca,Male,Engineering,4,susas@uwaterloo.ca
-21025251,Nicholas ,Chin,Nkhchin@uwaterloo.ca,,Engineering,2,e48huang@uwaterloo.ca
+21025251,Nicholas,Chin,Nkhchin@uwaterloo.ca,,Engineering,2,e48huang@uwaterloo.ca
 20961547,Nick,Garcia,n22garci@uwaterloo.ca,Male,Health,4,a229liu@uwaterloo.ca
 21111245,Niclas,Heun,nheun@uwaterloo.ca,,Mathematics,,
 20914856,Nico,Peng,npeng@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
@@ -746,14 +746,14 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20951165,Nitya,Choudhary,n8choudh@uwaterloo.ca,Female,Arts,1,h2hsieh@uwaterloo.ca
 20902868,Noah,Blackburn-Hum,nblackbu@uwaterloo.ca,Male,Science,3,d22cai@uwaterloo.ca
 20567017,Noah,Janzen,ncjanzen@uwaterloo.ca,Male,Science,4,i5yu@uwaterloo.ca
-21020534,Noah Wong,Wong,nshwong@uwaterloo.ca,Male,Science,2,j2447zha@uwaterloo.ca
+21020534,Noah,Wong,nshwong@uwaterloo.ca,Male,Science,2,j2447zha@uwaterloo.ca
 21075370,Nolan,Ha,nha@uwaterloo.ca,Male,Environment,,
 21036234,Nolan,Lau,np2lau@uwaterloo.ca,Male,Health,2,d22cai@uwaterloo.ca
-21077488,Oliver Wang,Wang,o26wang@uwaterloo.ca,Male,Engineering,4,susas@uwaterloo.ca
+21077488,Oliver,Wang,o26wang@uwaterloo.ca,Male,Engineering,4,susas@uwaterloo.ca
 20856106,Olivia,Dunford,odunford@uwaterloo.ca,Female,Arts,4,t389liu@uwaterloo.ca
 20997572,Olivia,Han,j23han@uwaterloo.ca,Female,Environment,1,h2hsieh@uwaterloo.ca
 20963643,Olivia,Zhang,o5zhang@waterloo.ca,Female,Mathematics,,
-20997283,Olivia Yan,Yan,owyan@uwaterloo.ca,Female,Mathematics,3,d78wong@uwaterloo.ca
+20997283,Olivia,Yan,owyan@uwaterloo.ca,Female,Mathematics,3,d78wong@uwaterloo.ca
 20837050,Olympia,To,oto@uwaterloo.ca,Female,Health,3,d22cai@uwaterloo.ca
 21011263,Oscar,Lam,oscarlam597@gmail.com,Male,Mathematics,4,susas@uwaterloo.ca
 21097196,Oskar,Presiwerk,ofpreisw@uwaterloo.ca,Male,Science,1,r5fu@uwaterloo.ca
@@ -764,12 +764,12 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20824476,Patricia,Liu,p99liu@uwaterloo.ca,Female,Engineering,3,d22cai@uwaterloo.ca
 20779130,Patrick,Thangarajah,petthang@uwaterloo.ca,Male,Engineering,1,shjoo@uwaterloo.ca
 21073719,Patrick,Yang,phyang@uwaterloo.ca,,Mathematics,,
-21036763,Patrick ,Obianwuzia ,Obianwuzia22@gmail.com,,Engineering,,
-21010674,Patrick Huang,Huang,py2huang@uwaterloo.ca,Male,Arts,4,d78wong@uwaterloo.ca
+21036763,Patrick,Obianwuzia ,Obianwuzia22@gmail.com,,Engineering,,
+21010674,Patrick,Huang,py2huang@uwaterloo.ca,Male,Arts,4,d78wong@uwaterloo.ca
 20867629,Peter,Magnus,pmagnus@uwaterloo.ca,Male,Environment,1,c249zhou@uwaterloo.ca
 20902971,Philip,Chen,p242chen@uwwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
 21090045,Pio,Nicdao,pnicdao@uwaterloo.ca,Male,Engineering,1,r5fu@uwaterloo.ca
-20903416,Praditya ,Alahari,palahari@uwaterloo.ca,Male,Engineering,2,a229liu@uwaterloo.ca
+20903416,Praditya,Alahari,palahari@uwaterloo.ca,Male,Engineering,2,a229liu@uwaterloo.ca
 20767175,Pranay,Nagpal,p5nagpal@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
 21091906,Pranesh,Sundaramoorthy,pranesh62189@gmail.com,,Arts,,
 20948206,Prasheel,Vellanki,prasheelvellanki@gmail.com,Male,Engineering,3,t389liu@uwaterloo.ca
@@ -784,11 +784,11 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20842795,Rachel,Lee,r93lee@uwaterloo.ca,,Arts,4,d78wong@uwaterloo.ca
 21076571,Rachel,Round,rlround@uwaterloo.ca,Female,Health,2,t389liu@uwaterloo.ca
 21082596,Rachel,Wu,r42wu@uwaterloo.ca,Female,Engineering,2,e48huang@uwaterloo.ca
-20997318,Rain Luo,Luo,r8luo@uwaterloo.ca,Male,Engineering,2,t389liu@uwaterloo.ca
-20942271,Raj Saragadam,Saragadam,rsaragad@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
-21028800,Ramadan ,Haider,rhaider@uwaterloo.ca,Male,Engineering,2,d78wong@uwaterloo.ca
+20997318,Rain,Luo,r8luo@uwaterloo.ca,Male,Engineering,2,t389liu@uwaterloo.ca
+20942271,Raj,Saragadam,rsaragad@uwaterloo.ca,Male,Mathematics,2,d22cai@uwaterloo.ca
+21028800,Ramadan,Haider,rhaider@uwaterloo.ca,Male,Engineering,2,d78wong@uwaterloo.ca
 21037482,Ramazan,Rakhmatullin,rrakhmat@uwaterloo.ca,,Mathematics,3,t389liu@uwaterloo.ca
-21110993,Raphaël ,Breaud ,rmbreaud@uwaterloo.ca,Male,Mathematics,3,a229liu@uwaterloo.ca
+21110993,Raphaël,Breaud ,rmbreaud@uwaterloo.ca,Male,Mathematics,3,a229liu@uwaterloo.ca
 20842016,Ravinder,Mangat,r6mangat@uwaterloo.ca,,Engineering,4,nysricha@uwaterloo.ca
 20885655,Ray,Hao,r25hao@uwaterloo.ca,,Mathematics,1,t389liu@uwaterloo.ca
 21075060,Ray,Zhu,r225zhu@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
@@ -800,7 +800,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20959234,Rian,Esguerra,rresguer@uwaterloo.ca,Male,Engineering,4,shjoo@uwaterloo.ca
 21060039,Richard,Bai,r25bai@uwaterloo.ca,,Mathematics,2,shjoo@uwaterloo.ca
 21036147,Richard,dziurkiewicz,rdziurki@uwaterloo.ca,male,arts,3,nwxie@uwaterloo.ca
-21000808,Richard Zhao,Zhao,r5zhao@uwaterloo.ca,Male,Mathematics,1,i5yu@uwaterloo.ca
+21000808,Richard,Zhao,r5zhao@uwaterloo.ca,Male,Mathematics,1,i5yu@uwaterloo.ca
 21008498,Ricky,Tran,rdtran@uwaterloo.ca,Male,Arts,2,s5feng@uwaterloo.ca
 20943902,Rico,Ru,rru@uwaterloo.ca,,Engineering,,
 20901514,Ridham,Goyal,r22goyal@uwaterloo.ca,Male,Engineering,3,susas@uwaterloo.ca
@@ -810,8 +810,8 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21074928,Robert,Fu,r5fu@uwaterloo.ca,Male,Mathematics,4,r225zhu@uwaterloo.ca
 20888053,Robert,Ilyes,rilyes@uwaterloo.ca,Male,Environment,4,i5yu@uwaterloo.ca
 21086341,Robert,Jin,rmjin@uwaterloo.ca,Male,Mathematics,,
-21031288,Robin ,Zhang,r67zhang@uwaterloo.ca,Male,Mathematics,,
-20855795,Robyn ,Lewis,R4lewis@ueaterloo.ca,,Arts,,
+21031288,Robin,Zhang,r67zhang@uwaterloo.ca,Male,Mathematics,,
+20855795,Robyn,Lewis,R4lewis@ueaterloo.ca,,Arts,,
 21068558,Rodney,Dont,r36dong@uwaterloo.ca,,Engineering,1,t389liu@uwaterloo.ca
 20897373,Roger,Chan,Ry2chan@uwaterloo.ca,Male,Health,4,r225zhu@uwaterloo.ca
 20960030,Roger,Zhang,r528zhan@uwaterloo.ca,Male,Mathematics,4,d78wong@uwaterloo.ca
@@ -825,7 +825,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21016288,Ryan,He,ryanykhe.12@gmail.com,Male,Arts,4,r225zhu@uwaterloo.ca
 21112693,Ryan,Lin,rlin20030429@gmail.com,,Mathematics,1,cmlee@uwaterloo.ca
 20847862,Ryan,Wu,R88wu@uwaterloo.ca,Male,Arts,4,r225zhu@uwaterloo.ca
-21012292,Saad ,Ahmed,s27ahmed@uwaterloo.ca,Male,Health,1,d22cai@uwaterloo.ca
+21012292,Saad,Ahmed,s27ahmed@uwaterloo.ca,Male,Health,1,d22cai@uwaterloo.ca
 21001714,Saaniya,Saraf,s4saraf@uwaterloo.ca,Female,Engineering,,
 21019808,Sabrina,Xing,s2xing@uwaterloo.ca,Female,Mathematics,,
 20938496,Saera,Chung,s65chung@uwaterloo.ca,Female,Mathematics,4,susas@uwaterloo.ca
@@ -835,7 +835,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20938864,Sam,Liu,sam.liu512@gmail.com,,Mathematics,,
 20882261,Samantha,Bedard,s3bedard@uwaterloo.ca,Female,Arts,3,nwxie@uwaterloo.ca
 20956483,Samantha,Lee,s649lee@uwaterloo.ca,Female,Health,4,d78wong@uwaterloo.ca
-21050174,Samantha ,Usas,susas@uwaterloo.ca,Female,Engineering,4,r225zhu@uwaterloo.ca
+21050174,Samantha,Usas,susas@uwaterloo.ca,Female,Engineering,4,r225zhu@uwaterloo.ca
 21087009,Samien,Bell,s8bell@uwaterloo.ca,Male,Science,2,r5fu@uwaterloo.ca
 21094413,Samiul,Biswas,s43biswa@uwaterloo.ca,,Science,2,d22cai@uwaterloo.ca
 20866859,Samuel,Farkas,s3farkas@uwaterloo.ca,Male,Environment,3,t389liu@uwaterloo.ca
@@ -847,7 +847,7 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20997694,Sara,Enns,sjenns@uwaterloo.ca,Female,Environment,3,a229liu@uwaterloo.ca
 20994492,Sarah,Joo,shjoo@uwaterloo.ca,Female,Mathematics,4,r225zhu@uwaterloo.ca
 20952591,Sarah,Kurak,skurak@uwaterloo.ca,,Engineering,,
-21007120,Saranjen Anandarajah,Anandarajah,sanandar@uwaterloo.ca,Male,Engineering,1,s5feng@uwaterloo.ca
+21007120,Saranjen,Anandarajah,sanandar@uwaterloo.ca,Male,Engineering,1,s5feng@uwaterloo.ca
 20842344,Sayohn,Ahilan,sayohnahilan@gmail.com,Male,Engineering,,
 20945892,Sayyam,Shah,s284shah@uwaterloo.ca,Male,Health,,
 21065636,Scott,Hao,s29hao@uwaterloo.ca,,Mathematics,1,d22cai@uwaterloo.ca
@@ -856,23 +856,23 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21025990,Sean,Nguyen,s8nguyen@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
 21006084,Sean,Song,s6song@uwaterloo.ca,,Mathematics,2,cmlee@uwaterloo.ca
 21089823,Sean,Zhang,s268zhan@uwaterloo.ca,Male,Engineering,4,d78wong@uwaterloo.ca
-20892920,Sean Huh,Huh,s5huh@uwaterloo.ca,Male,Mathematics,1,i5yu@uwaterloo.ca
-20782519,Sebastian ,Soo,sjxsoo@uwaterloo.ca,Male,Engineering,4,t389liu@uwaterloo.ca
+20892920,Sean,Huh,s5huh@uwaterloo.ca,Male,Mathematics,1,i5yu@uwaterloo.ca
+20782519,Sebastian,Soo,sjxsoo@uwaterloo.ca,Male,Engineering,4,t389liu@uwaterloo.ca
 20871700,Seungjae,Yoo,s34yoo@uwaterloo.ca,Male,Mathematics,3,d22cai@uwaterloo.ca
-21111453,Seyed Mohammad Amin,Mirjalili,smamirja@uwaterloo.ca,Male,Engineering,3,d78wong@uwaterloo.ca
+21111453,Seyed,Mirjalili,smamirja@uwaterloo.ca,Male,Engineering,3,d78wong@uwaterloo.ca
 21039532,Shahla,Eslami,seslami@uwaterloo.ca,Female,Mathematics,2,a229liu@uwaterloo.ca
 20894072,Shane,Hsieh,shanehsieh@hotmail.com,Male,Engineering,4,d78wong@uwaterloo.ca
 20899707,Shania,Jiang,S222jian@uwaterloo.ca,,Science,,
 21073339,Sharon,Seong,sseong@uwaterloo.ca,,Arts,,
 20832130,Sharujan,Sreekaran,ssreekar@uwaterloo.ca,Male,Mathematics,2,c249zhou@uwaterloo.ca
-20996815,Sheng liang,Chow,Slchow@uwaterloo.ca,,Mathematics,1,shjoo@uwaterloo.ca
+20996815,Sheng,Chow,Slchow@uwaterloo.ca,,Mathematics,1,shjoo@uwaterloo.ca
 21015539,shengze,yu,s26yu@uwaterloo.ca,Male,Health,4,r225zhu@uwaterloo.ca
 21006664,Sherry,Feng,s5feng@uwaterloo.ca,Female,Mathematics,2,i5yu@uwaterloo.ca
 20838011,Shivang,Patel,s393pate@uwaterloo.ca,,Mathematics,1,t389liu@uwaterloo.ca
 20947628,Sibi,Krishnan,s84krish@uwaterloo.ca,Male,Engineering,,
 21070268,Simerus,Mahesh,s28mahes@uwaterloo.ca,,Engineering,3,d22cai@uwaterloo.ca
 20935634,Simon,Gorbet,sgorbet@uwaterloo.ca,Male,Engineering,2,r225zhu@uwaterloo.ca
-20900439,Simran ,Gill,s95gill@uwaterloo.ca,Female,Arts,,
+20900439,Simran,Gill,s95gill@uwaterloo.ca,Female,Arts,,
 21101758,Siyuan,Zhao,s56zhao@uwaterloo.ca,Female,Mathematics,1,t389liu@uwaterloo.ca
 20953337,skye,huang,m225huan@uwaterloo.ca,,Mathematics,,
 21028457,Sloane,Lorenzo,Slorenzo@uwaterloo.ca,Female,Engineering,,
@@ -884,20 +884,20 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20964801,Stephanie,Muresan,Smuresan@gmail.com,,Arts,,
 20897384,Stephen,Cao,s73cao@uwaterloo.ca,Male,Mathematics,4,susas@uwaterloo.ca
 20883061,Steve,Chen,s754chen@uwaterloo.ca,Male,Engineering,4,susas@uwaterloo.ca
-20996728,Steve Sun,Sun,s7sun@uwaterloo.ca,Male,Mathematics,2,i5yu@uwaterloo.ca
+20996728,Steve,Sun,s7sun@uwaterloo.ca,Male,Mathematics,2,i5yu@uwaterloo.ca
 20952983,Steven,Li,S883li@uwaterloo.ca,Male,Engineering,4,c249zhou@uwaterloo.ca
 20879315,Steven,Zhang,S699zhan@uwaterloo.ca,Male,Engineering,2,d22cai@uwaterloo.ca
 20900356,Steven,Zhang,s749zhan@uwaterloo.ca,Male,Science,,
-21073423,Steven Jake Wong Haw Hiang,Wong Haw Hiang,sjwongha@uwaterloo.ca,Male,Engineering,3,susas@uwaterloo.ca
-21021984,Steven Mu,Mu,smu@uwaterloo.ca,Male,Engineering,3,nwxie@uwaterloo.ca
-20932488,Sung-En ,Huang,s385huan@uwaterloo.ca,,Engineering,2,d78wong@uwaterloo.ca
+21073423,Steven,Wong Haw Hiang,sjwongha@uwaterloo.ca,Male,Engineering,3,susas@uwaterloo.ca
+21021984,Steven,Mu,smu@uwaterloo.ca,Male,Engineering,3,nwxie@uwaterloo.ca
+20932488,Sung-En,Huang,s385huan@uwaterloo.ca,,Engineering,2,d78wong@uwaterloo.ca
 20994310,Sunil,Rathagirishnan,srathagi@uwaterloo.ca,Male,Engineering,4,susas@uwaterloo.ca
 21080064,Sunsica,Sahayanathan ,sunsica2005@gmail.com,,Arts,,
 21082910,Suryna,Tailor,s3tailor@uwaterloo.ca,Female,Science,,
 21167249,Sviatoslav,j,skoval@uwaterloo.ca,Male,Engineering,1,h2hsieh@uwaterloo.ca
 21092337,Sydney,Asa,sydney.asa@gmail.com,Female,Science,2,d78wong@uwaterloo.ca
 20912255,Sydney,Sadhu,snsadhu@uwaterloo.ca,Female,Arts,3,a229liu@uwaterloo.ca
-20945338,Syed Muhammad Zafar,Alam,smzalam@uwaterloo.ca,Male,Engineering,1,d22cai@uwaterloo.ca
+20945338,Syed,Alam,smzalam@uwaterloo.ca,Male,Engineering,1,d22cai@uwaterloo.ca
 21028371,Szymon,Niepsuj,Sniepsuj@uwaterloo.ca,,Arts,2,d22cai@uwaterloo.ca
 21061443,Tabish,Nazary,tnazary@uwaterloo.ca,,Arts,3,d22cai@uwaterloo.ca
 20816387,Tailai,Wang,tailaiwang01@gmail.com,Male,Mathematics,4,cmlee@uwaterloo.ca
@@ -924,16 +924,16 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20949797,Tiffany,Zhang,t464zhan@uwaterloo.ca,Female,Engineering,4,i5yu@uwaterloo.ca
 20954050,Tina,Tan,t38tan@uwaterloo.ca,Female,Arts,1,j5shang@uwaterloo.ca
 21026210,Tommy,Su,t5su@uwaterloo.ca,Male,Mathematics,1,j5shang@uwaterloo.ca
-20946908,Tommy ,Yau,thmyau@uwaterloo.ca,Male,Science,3,d22cai@uwaterloo.ca
-21066240,Tong ,Liu,t77liu@uwaterloo.ca,,Mathematics,2,cmlee@uwaterloo.ca
-20899904,Tong Yin,Han,tyhan@uwaterloo.ca,Female,Engineering,1,ericwei642@gmail.com
+20946908,Tommy,Yau,thmyau@uwaterloo.ca,Male,Science,3,d22cai@uwaterloo.ca
+21066240,Tong,Liu,t77liu@uwaterloo.ca,,Mathematics,2,cmlee@uwaterloo.ca
+20899904,Tong,Han,tyhan@uwaterloo.ca,Female,Engineering,1,ericwei642@gmail.com
 20670547,Tony,Wu,t99wu@uwaterloo.ca,Male,Mathematics,2,c249zhou@uwaterloo.ca
 20992169,Tony,Yan,T2yan@uwaterloo.ca,Male,Science,3,a229liu@uwaterloo.ca
 20997341,Tony,Yu,t8yu@uwaterloo.ca,Male,Engineering,2,i5yu@uwaterloo.ca
 21068438,Tony,Zhao,T22zhao@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
-21092488,Tracy ,Tran,T24tran@uwaterloo.ca,Female,Environment,1,c249zhou@uwaterloo.ca
+21092488,Tracy,Tran,T24tran@uwaterloo.ca,Female,Environment,1,c249zhou@uwaterloo.ca
 21075840,Trevor,Cheung,t6cheung@uwaterloo.ca,Male,Mathematics,3,d22cai@uwaterloo.ca
-20896759,Tristan ,Liu,t389liu@uwaterloo.ca,Male,Mathematics,3,i5yu@uwaterloo.ca
+20896759,Tristan,Liu,t389liu@uwaterloo.ca,Male,Mathematics,3,i5yu@uwaterloo.ca
 21031326,Troy,Abistado,tkabista@uwaterloo.ca,Male,Engineering,2,e48huang@uwaterloo.ca
 21083838,Trushang,Patel,tn5patel@uwaterloo.ca,,Engineering,,
 21085893,Tuong,Luu,tm2luu@uwaterloo.ca,Male,Mathematics,2,o2fang@uwaterloo.ca
@@ -958,17 +958,17 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20883105,Victoria,Santos,V3santos@uwaterloo.ca,,Arts,,
 20841304,Victoria,Veronesi,vverones@uwaterloo.ca,Female,Engineering,1,d22cai@uwaterloo.ca
 20992331,Victoria,Wang,vh2wang@uwaterloo.ca,Female,Arts,1,w27tian@uwaterloo.ca
-20995865,Victoria ,Cella Xia,Vecellax@uwaterloo.ca ,,Engineering,1,t389liu@uwaterloo.ca
-21015385,Victoria ,Milardovic,vamilard@uwaterloo.ca,Female,Environment,,
-21062856,Victoria ,Vorachak,vthvorac@uwaterloo.ca,Female,Engineering,,
-20963682,Viktoriya ,Zhukovskaya ,vzhukovs@uwaterloo.ca,Female,Engineering,,
+20995865,Victoria,Cella Xia,Vecellax@uwaterloo.ca ,,Engineering,1,t389liu@uwaterloo.ca
+21015385,Victoria,Milardovic,vamilard@uwaterloo.ca,Female,Environment,,
+21062856,Victoria,Vorachak,vthvorac@uwaterloo.ca,Female,Engineering,,
+20963682,Viktoriya,Zhukovskaya ,vzhukovs@uwaterloo.ca,Female,Engineering,,
 20947675,Vincent,Nguyen,v77nguye@uwaterloo.ca,Male,Engineering,,
 21080006,Vincent,Nguyen,v28nguye@uwaterloo.ca,,Engineering,,
-21063331,Vincent ,Chen,v33chen@uwaterloo.ca ,Male,Mathematics,3,susas@uwaterloo.ca
+21063331,Vincent,Chen,v33chen@uwaterloo.ca ,Male,Mathematics,3,susas@uwaterloo.ca
 20852562,Vitasta,Dhar,v2dhar@uwaterloo.ca,,Science,,
 20828373,Vivian,Liu,v9liu@uwaterloo.ca,Female,Mathematics,2,j2447zha@uwaterloo.ca
 20993651,Warren,Cao,w4cao@uwaterloo.ca,,Engineering,,
-20835111,Wendy Wu,Wu,w249wu@uwaterloo.ca,Female,Mathematics,2,s5feng@uwaterloo.ca
+20835111,Wendy,Wu,w249wu@uwaterloo.ca,Female,Mathematics,2,s5feng@uwaterloo.ca
 20839873,Wesley,Babulal,wbabulal@uwaterloo.ca,Male,Engineering,,
 21086457,Wesley,Xie,w26xie@uwaterloo.ca,Male,Mathematics,1,i5yu@uwaterloo.ca
 21033977,Will,Ford ,wford@uwaterloo.ca,Male,Health,4,j2447zha@uwaterloo.ca
@@ -989,8 +989,8 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 20928280,Yang,Lu,y494lu@uwaterloo.ca,Male,Engineering,4,r225zhu@uwaterloo.ca
 27887229,Yasith,Ellewela,yellewel@uwaterloo.ca,,Engineering,4,nysricha@uwaterloo.ca
 20775464,Yasmeen,Alshehabi,yalsheha@uwaterloo.ca,Female,Science,1,c249zhou@uwaterloo.ca
-20826988,Yue Yang,Yu,yy3yu@uwaterloo.ca,Male,Engineering,,
-21068544,Yuen Ho,Lu,h35lu@uwaterloo.ca,Male,Science,1,t389liu@uwaterloo.ca
+20826988,Yue,Yu,yy3yu@uwaterloo.ca,Male,Engineering,,
+21068544,Yuen,Lu,h35lu@uwaterloo.ca,Male,Science,1,t389liu@uwaterloo.ca
 20949847,Yzabelle,Perez,yperez@uwaterloo.ca,,Mathematics,,
 20780391,Zach,Bulatovich,ztbulato@uwaterloo.ca,,Arts,1,d22cai@uwaterloo.ca
 21052716,Zachary,Mann,zmann@uwaterloo.ca,,Science,2,d22cai@uwaterloo.ca
@@ -998,6 +998,6 @@ StdNo,FName,LName,Email,Gender,Faculty,Level,Evaluator Email
 21069979,Zeenat,Ogunnaike,zbogunna@uwaterloo.ca,,Arts,1,t389liu@uwaterloo.ca
 94411918,Zelda,Brown ,zmbrown@uwaterloo.ca,Female,Environment,,
 21022641,Zhaoyang,Yi,z3yi@uwaterloo.ca,Male,Engineering,1,c249zhou@uwaterloo.ca
-20749972,Zheng Zhu,Zhu,zhuoperation@gmail.com,Male,Environment,,
+20749972,Zheng,Zhu,zhuoperation@gmail.com,Male,Environment,,
 20778742,Zhilong,Zhao,zl3zhao@uwaterloo.ca,Male,Arts,3,d22cai@uwaterloo.ca
-20880628,Zoe ,Lussier-Gibbons,zlussier@uwaterloo.ca,,Engineering,2,e48huang@uwaterloo.ca
+20880628,Zoe,Lussier-Gibbons,zlussier@uwaterloo.ca,,Engineering,2,e48huang@uwaterloo.ca

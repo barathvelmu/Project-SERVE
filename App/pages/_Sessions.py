@@ -11,7 +11,7 @@ from datetime import datetime
 #st.set_page_config(page_title="Students", page_icon="🏐")
 st.sidebar.image("logo.png")
 st.sidebar.markdown("<h1 style='text-align: center;'>UW SERVE</h1>", unsafe_allow_html=True)
-st.title("Tournaments")
+st.title("Sessions")
 
 if 'Login' not in st.session_state:
     st.session_state['Login'] = False
@@ -21,9 +21,9 @@ if 'Email' not in st.session_state:
 
 if st.session_state["Login"]:
     
-    st.write("This page shows upcoming tournaments for this term!")
-    queries = requests.get("http://127.0.0.1:5000/tournament").json()
-    tournament_data = pd.DataFrame(queries["events"], columns=["TournamentName", "Date", "Start", "End", "Location", "Id"])
+    st.write("This page shows upcoming sessions for this term!")
+    queries = requests.get("http://127.0.0.1:5000/session").json()
+    tournament_data = pd.DataFrame(queries["events"], columns=["Id", "Date", "Start", "End", "Location", "Participant Count", "Level" ])
     
     calendar_options = {
         "editable": "false",
@@ -40,16 +40,18 @@ if st.session_state["Login"]:
     calendar_events = []
 
     for ind, row in tournament_data.iterrows():
-        reformatted = str(datetime.strptime(row["Date"], "%m/%d/%Y"))
+        reformatted = str(datetime.strptime(row["Date"], "%Y-%m-%d"))
         event = dict()
 
         event["allDay"] = "true" # Cleaner formatting in calendar
-        event["title"] = row["TournamentName"] # Tournament Name, used as title in calendar
+        event["title"] = "Session " + row["Id"][2:] # Tournament Name, used as title in calendar
         event["start"] = reformatted.split()[0] + "T" +row["Start"] # Start date (used in calendar)
         event["key_start"] = reformatted.split()[0] + "T" +row["Start"] # Start date + time (used for tournament info)
         event["key_end"] = reformatted.split()[0] + "T" +row["End"] # Start date + time (used for tournament info)
-        event["key"] = row["Id"] # EventId associated with tournament (used for tournament_info endpoint)
+        event["key"] = row["Participant Count"] # # of participants
         event["key2"] = row["Location"] # location of tournament
+        event["key3"] = row["Id"] #EventId
+        event["key4"] = row["Level"] #EventId
         calendar_events.append(event)
 
     custom_css="""
@@ -72,19 +74,25 @@ if st.session_state["Login"]:
     if calendar["callback"] == "eventClick":
         tournament_info = calendar["eventClick"]["event"]
 
-        # Add tournament info
+        # Add Session info
         st.title(tournament_info["title"])
         st.subheader("Time: %s to %s" % (tournament_info["extendedProps"]["key_start"].split("T")[1].split("-")[0], tournament_info["extendedProps"]["key_end"].split("T")[1].split("-")[0]))
         st.subheader("Location: %s" % (tournament_info["extendedProps"]["key2"]))
+        st.subheader("Number of Participants: %s" % (tournament_info["extendedProps"]["key"]))
+        st.subheader("Recommended Levels: %s" % (tournament_info["extendedProps"]["key4"]))
 
-        # Add teams to view
-        team_info = requests.get("http://127.0.0.1:5000/team_info?Id="+tournament_info["extendedProps"]["key"]).json()
-        team_df = pd.DataFrame(team_info["teams"], columns=["Name", "Level", "Team"])
-        for team in team_df["Team"].unique():
-            with st.expander(":red[%s]" % team):
-                team_members = team_df[team_df["Team"] == team][["Name", "Level"]]
-                for ind, row in team_members.iterrows():
-                    st.write("%s, Level %s" % (row["Name"], row["Level"]))
+        registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=0" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+
+        if registered_state:
+            if st.button("Unregister"):
+                st.write("done")
+                registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=2" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+        else:
+            if st.button("Register", type = "primary"):
+                st.write("done")
+                registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=1" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+
+
 else:
     st.warning("Please Login to see this page")
 
