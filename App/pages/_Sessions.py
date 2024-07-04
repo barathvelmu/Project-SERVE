@@ -85,12 +85,15 @@ if st.session_state["Login"]:
 
         if registered_state:
             if st.button("Unregister"):
-                st.write("done")
+                st.write("Success!")
                 registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=2" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
         else:
             if st.button("Register", type = "primary"):
-                st.write("done")
-                registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=1" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+                if int(tournament_info["extendedProps"]["key"]) < 24:
+                    registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=1" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+                    st.write("Success!")
+                else:
+                    st.write("Cant Register, Limit Reached.")
 
 
 else:

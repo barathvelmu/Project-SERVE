@@ -133,7 +133,7 @@ def send_code():
     print("Hello")
     # if the email is registered send a custom code
     email = str(request.args.get('email'))
-    subject = "Email Subject"
+    subject = "UW SERVE PORTAL PASSWORD"
     body = "This is your password: " + password
     sender = "uwservedb@gmail.com"
     recipients = [email]
@@ -223,17 +223,47 @@ def session_register():
         register = con.execute("""
             Insert into Member_Attend_Session values('%s', '%s')
         """%(email,session))
-        print("hi")
         con.commit()
         con.close()
+
+        subject = "UW SERVE: Registered for %s" % (session)
+        body = "You have successfully registered for %s! Please Check the SERVE Portal for more information." % (session)
+        sender = "uwservedb@gmail.com"
+        recipients = [email]
+        password = "yuqjdcbrvdhtkqku"
+        msg = MIMEText(body)
+        msg['Subject'] = subject
+        msg['From'] = sender
+        msg['To'] = ', '.join(recipients)
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp_server: #_SSL 465
+            try:
+                smtp_server.login(sender, password)
+                smtp_server.sendmail(sender, recipients, msg.as_string())
+            except Exception as e:
+                print("FAIL: %s" % (str(e)))
         
     elif action == '2': # unregister
         register = con.execute("""
             delete from Member_Attend_Session where Email = '%s' and EventId = '%s'
         """%(email,session))
-        print("hey")
         con.commit()
         con.close()
+
+        subject = "UW SERVE: Unegistered for %s" % (session)
+        body = "You have successfully unregistered for %s. Please Check the SERVE Portal for more information."% (session)
+        sender = "uwservedb@gmail.com"
+        recipients = [email]
+        password = "yuqjdcbrvdhtkqku"
+        msg = MIMEText(body)
+        msg['Subject'] = subject
+        msg['From'] = sender
+        msg['To'] = ', '.join(recipients)
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp_server: #_SSL 465
+            try:
+                smtp_server.login(sender, password)
+                smtp_server.sendmail(sender, recipients, msg.as_string())
+            except Exception as e:
+                print("FAIL: %s" % (str(e)))
         
     con = sqlite3.connect("SERVE_PROD.db")
     events = con.execute("""select count(*)
