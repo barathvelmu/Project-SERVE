@@ -47,14 +47,12 @@ CREATE TABLE "Tournament" (
 	"Location"	TEXT NOT NULL,
 	"Tcode"	TEXT NOT NULL,
 	"TorneyName"	TEXT NOT NULL,
-	"NumOfTeams"	INTEGER NOT NULL,
 	PRIMARY KEY("EventId")
 );
 
 CREATE TABLE "Team" (
 	"TeamId"	TEXT NOT NULL,
 	"TeamName"	TEXT NOT NULL,
-	"TeamSize"	INTEGER NOT NULL,
 	"EventId"	TEXT NOT NULL,
 	FOREIGN KEY("EventId") REFERENCES "Tournament"("EventId") ON DELETE CASCADE ON UPDATE CASCADE,
 	PRIMARY KEY("TeamId")
