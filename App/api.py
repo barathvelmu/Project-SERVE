@@ -113,7 +113,7 @@ def send_code():
     # Check if email is in S24_Members (count(Email) >= 1)
     con = sqlite3.connect("SERVE_PROD.db")
     result = con.execute("SELECT count(Email) FROM Member where Email = '%s'" % (str(email))).fetchall()[0][0]
-    result_exec = 0 #con.execute("SELECT count(Email) FROM Executive where Email = '%s'" % (str(email))).fetchall()[0][0]
+    result_exec = con.execute("SELECT count(Email) FROM Executive where Email = '%s'" % (str(email))).fetchall()[0][0]
     con.close()
     if result == 0 and result_exec == 0:
         return {'status': "Please Register or contact Admin - Email not detected in database."}
@@ -153,13 +153,42 @@ def send_code():
 @app.route('/checkpassword', methods = ['GET', 'POST'])
 def check_password():
     password = str(request.args.get('password'))
+    email = str(request.args.get('email'))
     con = sqlite3.connect("SERVE_PROD.db")
-    result = con.execute("SELECT count(Email) FROM Account where Password = '%s'" % (str(password))).fetchall()[0][0]
+    result = con.execute("SELECT count(Email) FROM Account where Password = '%s' and Email = '%s'" % (str(password), email)).fetchall()[0][0]
+    con.close()
+    con = sqlite3.connect("SERVE_PROD.db")
+    is_exec = con.execute("""select count(E.Email) from Executive as E
+    inner join Executive_Works_For_Term as ET on E.Email = ET.Email
+    where ET.Tcode = 'S2024' and E.Email = '%s'""" % (email)).fetchall()[0][0]
     con.close()
     if result == 1: # success
-        return {'status': 1}
+        return {'status': 1, 'exec': is_exec}
     else: # fail
-        return {'status': 0}
+        return {'status': 0, 'exec': is_exec}
+
+@app.route('/sendemail', methods = ['GET', 'POST'])
+def sendemail():
+    subject = str(request.args.get('subject'))
+    body = """A Message from UW SERVE:
+    
+    """ + str(request.args.get('body'))
+    sender = "uwservedb@gmail.com"
+    recipients = str(request.args.get('email')).split(',')
+    password = "yuqjdcbrvdhtkqku"
+    msg = MIMEText(body)
+    msg['Subject'] = subject
+    msg['From'] = sender
+    msg['To'] = ', '.join(recipients)
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp_server: #_SSL 465
+        try:
+            smtp_server.login(sender, password)
+            smtp_server.sendmail(sender, recipients, msg.as_string())
+            return {'status': "Sent Successfully!"}
+        except Exception as e:
+            return {'status': "Error: " + str(e)}
+    return {"events": events}
+
 
 @app.route('/tournament', methods = ['GET', 'POST'])
 def torunament():
@@ -184,7 +213,7 @@ def tournament_info():
                             Inner join Member
                             on Member.Email = Member_Make_Team.Email
                             WHERE Tournament.EventId = '%s'
-                        """%(TId)).fetchall()
+                        """ % (TId)).fetchall()
     con.close()
     return {"teams": teams}
 
@@ -192,13 +221,16 @@ def tournament_info():
 def session():
 
     con = sqlite3.connect("SERVE_PROD.db")
-    events = con.execute("""select session.EventId, session.Date, Session.StartTime, Session.EndTime, Session.Location, count(Member_Attend_Session.Email) as participant_count, Session_Levels.Level
-                        from session
-                        inner join Member_Attend_Session
-                        on session.EventId = Member_Attend_Session.EventId
-                        inner join Session_Levels
-                        on Session_Levels.EventId = Session.EventId
-                        group by session.EventId
+    events = con.execute("""with temp_table as (
+                                select session.EventId, session.Date, Session.StartTime, Session.EndTime, Session.Location, count(Member_Attend_Session.Email) as participant_count
+                                from session
+                                left join Member_Attend_Session
+                                on session.EventId = Member_Attend_Session.EventId
+                                group by session.EventId
+                            ) SELECT temp_table.EventId, temp_table.Date, temp_table.StartTime, temp_table.EndTime, temp_table.Location, temp_table.participant_count, Session_Levels.Level
+                            from temp_table
+                            inner join Session_Levels
+                            on temp_table.EventId = Session_Levels.EventId
                         """).fetchall()
     con.close()
     return {"events": events}
@@ -249,7 +281,7 @@ def session_register():
         con.commit()
         con.close()
 
-        subject = "UW SERVE: Unegistered for %s" % (session)
+        subject = "UW SERVE: Unregistered for %s" % (session)
         body = "You have successfully unregistered for %s. Please Check the SERVE Portal for more information."% (session)
         sender = "uwservedb@gmail.com"
         recipients = [email]

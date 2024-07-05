@@ -17,10 +17,17 @@ if 'Login' not in st.session_state:
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
+if 'Exec' not in st.session_state:
+    st.session_state['Exec'] = False
+
 if st.session_state["Login"]:
     
     st.write("This page shows breakdowns of SERVE by Faculty, Gender and More!")
-    faculty, gender, year, students = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Level Breakdown", "All Students"])
+    if st.session_state["Exec"]:
+        faculty, gender, year, students, send_email = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Level Breakdown", "All Students", "Send Email"])
+    else:
+        faculty, gender, year, students = st.tabs(["Faculty Breakdown", "Gender Breakdown", "Level Breakdown", "All Students"])
+    
     queries = requests.get("http://127.0.0.1:5000/StudentBreakdown").json()
 
     with faculty:
@@ -71,6 +78,17 @@ if st.session_state["Login"]:
         # Convert the data into a DataFrame for better display
         students_df = pd.DataFrame(queries['students'])
         st.dataframe(students_df[["Name", "Faculty", "Gender", "Level"]])
+    
+    if st.session_state["Exec"]:
+        with send_email:
+            with st.form("Form", clear_on_submit=False):
+                st.write("To send an email to multiple students, separate them with a comma WITHOUT SPACES. Ex: test@abc.com,serve@uwaterloo.ca")
+                email_member = st.text_input("Student Email(s):")
+                email_subject = st.text_input("Email Subject:")
+                email_body = st.text_area("Write your email here:")
+                if st.form_submit_button("Send Email"):
+                    status = requests.get("http://127.0.0.1:5000/sendemail?email=%s&subject=%s&body=%s" % (email_member, email_subject, email_body)).json()
+                    st.write(status["status"])
 else:
     st.warning("Please Login to see this page")
 

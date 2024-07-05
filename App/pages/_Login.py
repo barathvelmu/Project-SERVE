@@ -15,6 +15,9 @@ if 'Login' not in st.session_state:
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
+if 'Exec' not in st.session_state:
+    st.session_state['Exec'] = False
+
 st.title("SERVE Member Login")
 
 with st.form("Form", clear_on_submit=False):
@@ -25,11 +28,11 @@ with st.form("Form", clear_on_submit=False):
 
     password = st.text_input("Code (Sent To Email)")
     if st.form_submit_button("Login with Code"):
-        res = requests.get("http://127.0.0.1:5000/checkpassword?password="+password).json()
-
+        res = requests.get("http://127.0.0.1:5000/checkpassword?password=%s&email=%s"%(password, email)).json()
         if res["status"] == 1:
             st.session_state["Login"] = True
             st.session_state["Email"] = email
+            st.session_state["Exec"] = res["exec"] == 1
             st.write("Login Successful!")
         else:
             st.write("Error. Please try again.")

@@ -19,6 +19,9 @@ if 'Login' not in st.session_state:
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
+if 'Exec' not in st.session_state:
+    st.session_state['Exec'] = False
+
 if st.session_state["Login"]:
     
     st.write("This page shows upcoming sessions for this term!")
@@ -81,19 +84,22 @@ if st.session_state["Login"]:
         st.subheader("Number of Participants: %s" % (tournament_info["extendedProps"]["key"]))
         st.subheader("Recommended Levels: %s" % (tournament_info["extendedProps"]["key4"]))
 
+        # If the session date has not passed, show buttons allowing for registration/unregistration. Otherwise display due date passed message.
         registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=0" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
-
-        if registered_state:
-            if st.button("Unregister"):
-                st.write("Success!")
-                registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=2" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+        if datetime.strptime(tournament_info["start"], "%Y-%m-%d") > datetime.now():
+            if registered_state:
+                if st.button("Unregister"):
+                    st.write("Successfully Unregistered.")
+                    registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=2" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+            else:
+                if st.button("Register", type = "primary"):
+                    if int(tournament_info["extendedProps"]["key"]) < 24: # each session has max 24 members
+                        registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=1" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
+                        st.write("Successfully Registered.")
+                    else:
+                        st.write("Cant Register, Limit Reached.")
         else:
-            if st.button("Register", type = "primary"):
-                if int(tournament_info["extendedProps"]["key"]) < 24:
-                    registered_state = requests.get("http://127.0.0.1:5000/session_register?email=%s&session=%s&action=1" % (st.session_state["Email"], tournament_info["extendedProps"]["key3"])).json()["output"]
-                    st.write("Success!")
-                else:
-                    st.write("Cant Register, Limit Reached.")
+            st.write("Event has passed.")
 
 
 else:

@@ -16,6 +16,9 @@ if 'Login' not in st.session_state:
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
+if 'Exec' not in st.session_state:
+    st.session_state['Exec'] = False
+    
 def allFieldsCompleted(email, firstname, lastname, student_id, gender, faculty):
     if (email and firstname and lastname 
               and student_id and gender 

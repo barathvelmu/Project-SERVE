@@ -19,6 +19,9 @@ if 'Login' not in st.session_state:
 if 'Email' not in st.session_state:
     st.session_state['Email'] = False
 
+if 'Exec' not in st.session_state:
+    st.session_state['Exec'] = False
+
 if st.session_state["Login"]:
     
     st.write("This page shows upcoming tournaments for this term!")
