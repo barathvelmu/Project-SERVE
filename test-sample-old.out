@@ -1,0 +1,93 @@
+-- Students by Faculty (R6)
+Faculty	count(*)
+Arts	1
+Engineering	3
+Environment	1
+Health	1
+Mathematics	4
+Science	1
+
+-- Students by Gender (R6)
+Gender	count(*)
+Female	2
+Male	8
+Other	1
+
+-- Students by Level (R6)
+Assigned_Level	count(*)
+Level 1	1
+Level 2	1
+Level 3	2
+Level 4	5
+Not Assigned	2
+
+-- All Students (R6)
+Name	Gender	Faculty	Level
+AAAAAAAA BBBBBBBB	Male	Mathematics	Level 2
+Alexander Chai	Male	Mathematics	Level 4
+Alexandre Chouinard	Male	Health	Level 4
+Alissa Chi	Female	Science	Level 3
+Barath Velmurugan	Male	Mathematics	
+JP Noroaa	Other	Environment	Level 1
+Jake Masterson	Male	Mathematics	Level 4
+Patrick Huang	Male	Arts	Level 4
+Rein Keppo	Male	Engineering	Level 4
+Saaniya Saraf	Female	Engineering	
+Seyed Mohammad Amin Mirjalili	Male	Engineering	Level 3
+
+-- Insert new member to db (R7)
+Execution finished without errors.
+Result: query executed successfully. Took 9ms, 1 rows affected
+At line 1:
+INSERT INTO Member (StdNo, Fname, Lname, Email, Gender, Faculty, Level, EvaluatorEmail) VALUES (76767676, 'qwert', 'trewq', 'testemail@gmail.com', 'Male', 'Arts', 1, NULL)
+
+-- Update New member term (R7)
+Execution finished without errors.
+Result: query executed successfully. Took 0ms, 1 rows affected
+At line 1:
+INSERT INTO Member_Valid_For_Term (Tcode, Email) values ('S2024', 'testemail@gmail.com')
+
+-- Update member information (R8)
+Execution finished without errors.
+Result: query executed successfully. Took 0ms, 1 rows affected
+At line 1:
+UPDATE Member SET StdNo = 55555566, Fname = 'qwerty', Lname = 'qwerty', Gender = 'F', Faculty = 'Engineering', Level = 1 where email = 'testemail@gmail.com'
+
+-- Check if email exists for member (R9)
+count(Email)
+1
+
+-- Email is not in Acount, add new tuple (R9)
+Execution finished without errors.
+Result: query executed successfully. Took 8ms
+At line 1:
+INSERT INTO Account (Password, Email) VALUES ('BBBBBAAAAAAAAAAAAAAA12345', 'testemail@gmail.com');
+
+-- Email is in Account, update tuple (R9)
+Execution finished without errors.
+Result: query executed successfully. Took 8ms
+At line 1:
+UPDATE Account SET Password = 'AAAAAAAAAAAAAAAAAAAA12345' where Email = 'j4noronh@uwaterloo.ca'
+
+-- Inputted password not in account (R9)
+count(Email)
+0
+
+-- Inputted password in account (R9)
+count(Email)
+1
+
+-- Members table
+StdNo	Fname	Lname	Email	Gender	Faculty	Level	EvaluatorEmail
+21017215	Alexander	Chai	aachai@uwaterloo.ca	Male	Mathematics	Level 4	d78wong@uwaterloo.ca
+21012631	Alexandre	Chouinard	acchouin@uwaterloo.ca	Male	Health	Level 4	d78wong@uwaterloo.ca
+20905813	Jake	Masterson	j3master@uwaterloo.ca	Male	Mathematics	Level 4	d78wong@uwaterloo.ca
+21010674	Patrick	Huang	py2huang@uwaterloo.ca	Male	Arts	Level 4	d78wong@uwaterloo.ca
+21067881	Rein	Keppo	rkeppo@uwaterloo.ca	Male	Engineering	Level 4	d78wong@uwaterloo.ca
+21111453	Seyed Mohammad Amin	Mirjalili	smamirja@uwaterloo.ca	Male	Engineering	Level 3	d78wong@uwaterloo.ca
+12345678	Barath	Velmurugan	barathvelmu@gmail.com	Male	Mathematics		
+20943292	AAAAAAAA	BBBBBBBB	j4noronh@uwaterloo.ca	Male	Mathematics	Level 2	aliu@uwaterloo.ca
+21001713	Alissa	Chi	a2chi@uwaterloo.ca	Female	Science	Level 3	aliu@uwaterloo.ca
+21001714	Saaniya	Saraf	s4saraf@uwaterloo.ca	Female	Engineering		
+12332122	JP	Noroaa	jpnoro2003@gmail.com	Other	Environment	Level 1	
+55555566	qwerty	qwerty	testemail@gmail.com	F	Engineering	1	
