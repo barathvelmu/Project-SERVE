@@ -19,10 +19,10 @@ if 'Email' not in st.session_state:
 if 'Exec' not in st.session_state:
     st.session_state['Exec'] = False
     
-def allFieldsCompleted(email, firstname, lastname, student_id, gender, faculty):
+def allFieldsCompleted(email, firstname, lastname, student_id, gender, faculty, level_of_play):
     if (email and firstname and lastname 
               and student_id and gender 
-              and faculty): 
+              and faculty and level_of_play): 
         return True
     else: 
         return False
