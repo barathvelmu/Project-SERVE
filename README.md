@@ -3,9 +3,9 @@ Repository for the final project of Group 13 for CS338 (Spring 2024)
 
 # Demo 
 Note: both links do not open in a new tab natively
-- Milestone 1 Demo: https://youtu.be/dOFKvirQiRU?si=Ha9VpzSiIXQVWKs0 
-- **Milestone 2 Demo:** https://youtu.be/ydMeBrlFJ-0?si=H3D7H_hv8gSPcldY
-
+- Milestone 1 Demo: https://youtu.be/dOFKvirQiRU 
+- **Milestone 2 Demo:** https://youtu.be/ydMeBrlFJ-0
+  - Added features shown towards the middle and final parts of the video.
 
 ## Features Currently Supported
 - Viewing Aggregate Statisics of the SERVE Club *by Faculty, Gender, and Level* ("Student Breakdown")
