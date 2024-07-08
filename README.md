@@ -13,6 +13,8 @@ Note: both links do not open in a new tab natively
 - Adding a club member (with form validation logic)
 - Updating a club member (with form validation logic)
 - Dynamic sidebar based on login/logout (purely code based)
+- View and register for upcoming sessions
+- View previous and upcoming tournaments, as well as the teams participating in them.
 
 ## Running the Project
 1. Ensure that you have all of the libraries installed as described in requirements.txt using `pip install -r requirements.txt`
