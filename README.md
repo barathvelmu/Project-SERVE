@@ -1,6 +1,10 @@
 # Project-SERVE 🚀
 Repository for the final project of Group 13 for CS338 (Spring 2024)
 
+# Demo
+Milestone 1 Demo: https://youtu.be/dOFKvirQiRU?si=Ha9VpzSiIXQVWKs0
+**Milestone 2 Demo:** https://youtu.be/ydMeBrlFJ-0?si=H3D7H_hv8gSPcldY
+
 ## Features Currently Supported
 - Viewing Aggregate Statisics of the SERVE Club *by Faculty, Gender, and Level* ("Student Breakdown")
 - Email-based Authentication: register and login
