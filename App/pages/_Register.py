@@ -53,17 +53,20 @@ with st.form("Form", clear_on_submit=False):
 
     if st.form_submit_button("Submit"):
         if logged_in: # Update Info
-            if len(str(int(student_id))) == 8:
-                try: 
-                    validate_email(email)
-                    if form_submit(email.lower(), firstname, lastname, student_id, gender, faculty, level_of_play):
-                            st.success("Your student information has been updated!")
-                    else: 
-                        st.error("Update Failed. Please contact an administrator.")
-                except Exception as e:
-                    st.error(f"Email format is invalid.")
-            else: 
-                st.error("Student number is invalid. Please enter the 8-digit number.")
+            try:
+                if len(str(int(student_id))) == 8:
+                    try: 
+                        validate_email(email)
+                        if form_submit(email.lower(), firstname, lastname, student_id, gender, faculty, level_of_play):
+                                st.success("Your student information has been updated!")
+                        else: 
+                            st.error("Update Failed. Please contact an administrator.")
+                    except Exception as e:
+                        st.error(f"Email format is invalid.")
+                else: 
+                    st.error("Student number is invalid. Please enter the 8-digit number.")
+            except:
+                st.error("Please fill in all fields")
         else: # Add new account
             if allFieldsCompleted(email, firstname, lastname, student_id, gender, faculty, level_of_play):
                 if len(str(int(student_id))) == 8:
