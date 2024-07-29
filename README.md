@@ -2,7 +2,7 @@
 Repository for the final project of Group 13 for CS338 (Spring 2024)
 
 ## Demo Videos
-Note: both links do not open in a new tab natively
+Note: all links do not open in a new tab natively
 - Milestone 1 Demo: https://youtu.be/dOFKvirQiRU 
 - Milestone 2 Demo: https://youtu.be/ydMeBrlFJ-0
   - Added features are shown in the 2nd half of the video (up till the end).
