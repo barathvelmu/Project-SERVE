@@ -1,5 +1,4 @@
 # Project-SERVE 🚀
-Repository for the final project of Group 13 for CS338 (Spring 2024)
 
 ## Demo Videos
 Note: all links do not open in a new tab natively
